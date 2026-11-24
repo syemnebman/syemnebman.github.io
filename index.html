@@ -1,0 +1,2236 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>vk挠痒痒官网入口 - 官方视频门户 | 快乐解压内容集合</title>
+<meta name="description" content="vk挠痒痒官方网站入口，专注轻松解压与快乐互动视频的官方内容门户，汇聚原创创作者、精品视频与温暖社区，提供高清正版内容与持续更新的快乐陪伴。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23ff6f61'/%3E%3Ccircle cx='24' cy='26' r='5' fill='%23fff'/%3E%3Ccircle cx='42' cy='26' r='5' fill='%23fff'/%3E%3Cpath d='M20 40 Q32 52 44 40' stroke='%23fff' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  --vkt-coral:#ff6f61;
+  --vkt-coral-deep:#e2523f;
+  --vkt-amber:#ffb454;
+  --vkt-cream:#fff8f2;
+  --vkt-paper:#fffdf9;
+  --vkt-ink:#2b2320;
+  --vkt-ink-soft:#5d524c;
+  --vkt-line:#f0e2d6;
+  --vkt-shadow:0 10px 30px rgba(203,120,90,.12);
+  --vkt-radius:18px;
+  --vkt-head-h:112px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:var(--vkt-head-h)}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  background:var(--vkt-cream);
+  color:var(--vkt-ink);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+ul,ol{list-style:none}
+
+/* ============ 吸顶区 ============ */
+.vkt-sticky-wrap{
+  position:sticky;top:0;z-index:60;
+  box-shadow:0 6px 24px rgba(203,120,90,.10);
+}
+.vkt-announce{
+  background:linear-gradient(90deg,#ff8a72,#ff6f61 40%,#ffb454);
+  color:#fff;
+  font-size:13.5px;
+  padding:9px 20px;
+  display:flex;align-items:center;gap:14px;
+  overflow:hidden;
+}
+.vkt-announce-tag{
+  flex:0 0 auto;
+  background:rgba(255,255,255,.24);
+  border:1px solid rgba(255,255,255,.5);
+  border-radius:999px;
+  padding:1px 10px;
+  font-size:12px;
+  letter-spacing:.06em;
+  font-weight:600;
+}
+.vkt-announce-track{
+  position:relative;flex:1 1 auto;height:22px;overflow:hidden;
+}
+.vkt-announce-item{
+  position:absolute;inset:0;
+  display:flex;align-items:center;
+  white-space:nowrap;text-overflow:ellipsis;overflow:hidden;
+  opacity:0;transform:translateY(12px);
+  transition:opacity .45s ease,transform .45s ease;
+}
+.vkt-announce-item.is-on{opacity:1;transform:translateY(0)}
+.vkt-announce-item b{font-weight:700;margin-right:8px}
+.vkt-announce-link{
+  flex:0 0 auto;font-size:12.5px;color:#fff;
+  border-bottom:1px dashed rgba(255,255,255,.8);
+}
+
+/* ============ 页头 ============ */
+.vkt-header{
+  background:var(--vkt-paper);
+  border-bottom:1px solid var(--vkt-line);
+}
+.vkt-header-inner{
+  max-width:1180px;margin:0 auto;
+  padding:14px 22px;
+  display:flex;align-items:center;gap:20px;
+}
+.vkt-logo{
+  display:flex;align-items:center;gap:11px;flex:0 0 auto;
+}
+.vkt-logo-mark{
+  width:42px;height:42px;border-radius:13px;
+  background:linear-gradient(140deg,var(--vkt-coral),var(--vkt-amber));
+  display:grid;place-items:center;
+  box-shadow:0 8px 18px rgba(255,111,97,.32);
+}
+.vkt-logo-mark svg{width:24px;height:24px}
+.vkt-logo-text{line-height:1.2}
+.vkt-logo-text strong{
+  display:block;font-size:18px;letter-spacing:.02em;
+}
+.vkt-logo-text span{
+  font-size:11.5px;color:var(--vkt-ink-soft);letter-spacing:.14em;
+}
+.vkt-nav{
+  display:flex;align-items:center;gap:4px;
+  margin-left:auto;flex-wrap:wrap;
+}
+.vkt-nav a{
+  font-size:14.5px;color:var(--vkt-ink-soft);
+  padding:7px 12px;border-radius:10px;
+  transition:background .2s,color .2s;
+  white-space:nowrap;
+}
+.vkt-nav a:hover,.vkt-nav a.is-active{
+  background:#fff0e8;color:var(--vkt-coral-deep);font-weight:600;
+}
+.vkt-search{
+  position:relative;flex:0 0 auto;
+  display:flex;align-items:center;
+  background:#fff5ee;border:1px solid var(--vkt-line);
+  border-radius:999px;padding:4px 4px 4px 14px;
+}
+.vkt-search input{
+  border:none;background:none;outline:none;
+  font-size:13.5px;color:var(--vkt-ink);
+  width:150px;
+}
+.vkt-search input::placeholder{color:#b4a49b}
+.vkt-search button{
+  width:30px;height:30px;border-radius:50%;
+  background:var(--vkt-coral);color:#fff;
+  display:grid;place-items:center;
+}
+.vkt-search-btn svg{width:15px;height:15px}
+.vkt-search-hint{
+  position:absolute;top:calc(100% + 10px);left:0;right:0;
+  background:#fff;border:1px solid var(--vkt-line);
+  border-radius:14px;box-shadow:var(--vkt-shadow);
+  padding:8px;font-size:13px;color:var(--vkt-ink-soft);
+  display:none;z-index:70;
+}
+.vkt-search-hint.is-open{display:block}
+.vkt-search-hint li{
+  padding:6px 9px;border-radius:8px;
+}
+.vkt-search-hint li:hover{background:#fff2ea}
+.vkt-search-hint .vkt-hint-empty{color:#b4a49b;padding:6px 9px}
+.vkt-burger{
+  display:none;width:42px;height:42px;border-radius:12px;
+  border:1px solid var(--vkt-line);background:#fff;
+  place-items:center;margin-left:auto;
+}
+.vkt-burger span{display:block;width:19px;height:2px;background:var(--vkt-ink);border-radius:2px;position:relative}
+.vkt-burger span::before,.vkt-burger span::after{
+  content:"";position:absolute;left:0;width:19px;height:2px;background:var(--vkt-ink);border-radius:2px;
+}
+.vkt-burger span::before{top:-6px}
+.vkt-burger span::after{top:6px}
+
+/* 移动菜单 */
+.vkt-mobile-nav{
+  display:none;background:var(--vkt-paper);
+  border-bottom:1px solid var(--vkt-line);
+  padding:10px 22px 18px;
+}
+.vkt-mobile-nav.is-open{display:block}
+.vkt-mobile-nav a{
+  display:block;padding:11px 8px;border-radius:10px;
+  font-size:15px;color:var(--vkt-ink-soft);
+  border-bottom:1px dashed var(--vkt-line);
+}
+.vkt-mobile-nav a:last-child{border-bottom:none}
+.vkt-mobile-nav a:hover{background:#fff2ea;color:var(--vkt-coral-deep)}
+
+/* ============ 通用 ============ */
+.vkt-container{max-width:1180px;margin:0 auto;padding:0 22px}
+.vkt-section{padding:66px 0}
+.vkt-section-alt{background:var(--vkt-paper)}
+.vkt-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12.5px;letter-spacing:.16em;font-weight:700;
+  color:var(--vkt-coral-deep);text-transform:uppercase;
+  margin-bottom:12px;
+}
+.vkt-eyebrow::before{
+  content:"";width:22px;height:2px;border-radius:2px;
+  background:var(--vkt-coral);
+}
+.vkt-h2{
+  font-size:clamp(24px,3.2vw,34px);
+  line-height:1.3;letter-spacing:-.01em;
+  margin-bottom:10px;
+}
+.vkt-section-lead{
+  color:var(--vkt-ink-soft);font-size:15.5px;max-width:760px;
+}
+.vkt-section-head{margin-bottom:34px}
+.vkt-btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:11px 22px;border-radius:999px;
+  font-size:14.5px;font-weight:600;
+  transition:transform .18s ease,box-shadow .18s ease,background .18s;
+}
+.vkt-btn-primary{
+  background:linear-gradient(135deg,var(--vkt-coral),var(--vkt-coral-deep));
+  color:#fff;box-shadow:0 10px 22px rgba(255,111,97,.32);
+}
+.vkt-btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 28px rgba(255,111,97,.4)}
+.vkt-btn-ghost{
+  background:#fff;border:1.5px solid var(--vkt-line);color:var(--vkt-ink);
+}
+.vkt-btn-ghost:hover{border-color:var(--vkt-coral);color:var(--vkt-coral-deep);transform:translateY(-2px)}
+.vkt-tag{
+  display:inline-block;font-size:12px;
+  padding:2px 10px;border-radius:999px;
+  background:#fff0e8;color:var(--vkt-coral-deep);
+  font-weight:600;
+}
+.vkt-tag-amber{background:#fff5e2;color:#b8761a}
+.vkt-tag-green{background:#eaf7ec;color:#2f8a4a}
+.vkt-tag-blue{background:#e9f2ff;color:#2c62b8}
+
+/* ============ 首屏 ============ */
+.vkt-hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(circle at 88% 12%,rgba(255,180,84,.28),transparent 46%),
+    radial-gradient(circle at 6% 88%,rgba(255,111,97,.20),transparent 48%),
+    linear-gradient(155deg,#fff6ef,#ffece2 60%,#fff8f2);
+  padding:64px 0 72px;
+}
+.vkt-hero-grid{
+  display:grid;grid-template-columns:minmax(0,6fr) minmax(0,4fr);
+  gap:48px;align-items:center;
+}
+.vkt-hero-badge{
+  display:inline-flex;align-items:center;gap:9px;
+  background:#fff;border:1px solid var(--vkt-line);
+  border-radius:999px;padding:5px 14px 5px 6px;
+  font-size:12.5px;color:var(--vkt-ink-soft);font-weight:600;
+  box-shadow:0 4px 14px rgba(203,120,90,.09);
+  margin-bottom:20px;
+}
+.vkt-hero-badge i{
+  width:22px;height:22px;border-radius:50%;
+  background:linear-gradient(135deg,var(--vkt-coral),var(--vkt-amber));
+  display:grid;place-items:center;
+}
+.vkt-hero-badge i svg{width:12px;height:12px}
+.vkt-hero h1{
+  font-size:clamp(38px,5.6vw,62px);
+  line-height:1.08;letter-spacing:-.02em;
+  margin-bottom:6px;
+}
+.vkt-hero h1 em{
+  font-style:normal;
+  background:linear-gradient(120deg,var(--vkt-coral),var(--vkt-amber));
+  -webkit-background-clip:text;background-clip:text;
+  color:transparent;
+}
+.vkt-hero-sub{
+  font-size:17px;color:var(--vkt-coral-deep);font-weight:600;
+  margin:10px 0 16px;
+}
+.vkt-hero-intro{
+  font-size:15.5px;color:var(--vkt-ink-soft);
+  max-width:560px;margin-bottom:26px;
+}
+.vkt-hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:32px}
+.vkt-hero-stats{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:14px;max-width:520px;
+}
+.vkt-stat{
+  background:#fff;border:1px solid var(--vkt-line);
+  border-radius:14px;padding:13px 15px;
+  box-shadow:0 6px 16px rgba(203,120,90,.07);
+}
+.vkt-stat b{
+  display:block;font-size:22px;letter-spacing:-.01em;
+  color:var(--vkt-coral-deep);line-height:1.2;
+}
+.vkt-stat span{font-size:12.5px;color:var(--vkt-ink-soft)}
+.vkt-hero-visual{position:relative}
+.vkt-hero-frame{
+  border-radius:26px;overflow:hidden;
+  box-shadow:0 26px 60px rgba(203,120,90,.26);
+  border:6px solid #fff;
+  transform:rotate(-1.4deg);
+  transition:transform .3s ease;
+}
+.vkt-hero-frame:hover{transform:rotate(0) translateY(-4px)}
+.vkt-hero-frame svg{width:100%;height:auto}
+.vkt-hero-float{
+  position:absolute;background:#fff;border-radius:14px;
+  padding:10px 14px;box-shadow:0 14px 30px rgba(203,120,90,.2);
+  font-size:12.5px;font-weight:600;display:flex;align-items:center;gap:8px;
+}
+.vkt-hero-float-l{left:-16px;bottom:56px}
+.vkt-hero-float-r{right:-8px;top:34px}
+.vkt-hero-float .vkt-dot{
+  width:8px;height:8px;border-radius:50%;background:#3ecf7c;
+  box-shadow:0 0 0 4px rgba(62,207,124,.18);
+}
+
+/* ============ 焦点内容 ============ */
+.vkt-focus-grid{
+  display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);
+  gap:26px;
+}
+.vkt-focus-main{
+  background:#fff;border:1px solid var(--vkt-line);
+  border-radius:var(--vkt-radius);overflow:hidden;
+  box-shadow:var(--vkt-shadow);
+  display:flex;flex-direction:column;
+}
+.vkt-cover{
+  position:relative;aspect-ratio:16/9;overflow:hidden;background:#ffe9dc;
+}
+.vkt-cover svg{width:100%;height:100%;object-fit:cover}
+.vkt-cover-play{
+  position:absolute;inset:0;display:grid;place-items:center;
+  background:linear-gradient(180deg,rgba(43,35,32,0) 42%,rgba(43,35,32,.42));
+}
+.vkt-play-btn{
+  width:58px;height:58px;border-radius:50%;
+  background:rgba(255,255,255,.94);
+  display:grid;place-items:center;
+  box-shadow:0 10px 26px rgba(0,0,0,.22);
+  transition:transform .2s ease;
+}
+.vkt-play-btn:hover{transform:scale(1.08)}
+.vkt-play-btn svg{width:20px;height:20px;margin-left:3px}
+.vkt-focus-body{padding:22px 24px 24px;display:flex;flex-direction:column;gap:12px;flex:1}
+.vkt-focus-body h3{font-size:21px;line-height:1.4}
+.vkt-focus-body p{font-size:14.5px;color:var(--vkt-ink-soft)}
+.vkt-meta{
+  display:flex;flex-wrap:wrap;align-items:center;gap:10px;
+  font-size:12.5px;color:#98897f;
+}
+.vkt-meta b{color:var(--vkt-ink-soft);font-weight:600}
+.vkt-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:6px}
+.vkt-mini-btn{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:12.5px;font-weight:600;
+  padding:7px 13px;border-radius:999px;
+  background:#fff5ee;color:var(--vkt-ink-soft);
+  border:1px solid var(--vkt-line);
+  transition:background .18s,color .18s,transform .18s;
+}
+.vkt-mini-btn:hover{background:#fff0e6;color:var(--vkt-coral-deep);transform:translateY(-1px)}
+.vkt-mini-btn svg{width:14px;height:14px}
+.vkt-mini-btn.is-liked{background:#ffe7e2;color:var(--vkt-coral-deep);border-color:#ffcfc5}
+.vkt-mini-btn.is-saved{background:#fff2d8;color:#b8761a;border-color:#ffdfa8}
+
+.vkt-focus-side{display:grid;gap:16px;align-content:start}
+.vkt-focus-card{
+  background:#fff;border:1px solid var(--vkt-line);
+  border-radius:14px;padding:16px 18px;
+  display:grid;grid-template-columns:minmax(0,86px) minmax(0,1fr);
+  gap:14px;align-items:center;
+  box-shadow:0 6px 18px rgba(203,120,90,.07);
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+.vkt-focus-card:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(203,120,90,.16)}
+.vkt-focus-thumb{
+  border-radius:10px;overflow:hidden;aspect-ratio:1/1;
+  background:#ffe9dc;
+}
+.vkt-focus-thumb svg{width:100%;height:100%}
+.vkt-focus-card h3{font-size:15.5px;line-height:1.45;margin-bottom:5px}
+.vkt-focus-card p{font-size:12.5px;color:var(--vkt-ink-soft);line-height:1.55}
+
+/* ============ 视频列表 ============ */
+.vkt-video-list{display:grid;gap:14px}
+.vkt-video-row{
+  background:#fff;border:1px solid var(--vkt-line);
+  border-radius:14px;padding:18px 20px;
+  display:grid;grid-template-columns:minmax(0,1fr) auto;
+  gap:16px;align-items:center;
+  transition:transform .2s,box-shadow .2s,border-color .2s;
+}
+.vkt-video-row:hover{transform:translateY(-2px);box-shadow:var(--vkt-shadow);border-color:#ffd9ca}
+.vkt-video-row-main h3{font-size:17px;line-height:1.45;margin-bottom:6px}
+.vkt-video-row-main p{font-size:13.8px;color:var(--vkt-ink-soft);margin-bottom:9px}
+.vkt-video-row-tags{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:9px}
+.vkt-video-row-meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:#98897f}
+.vkt-video-row-meta b{color:var(--vkt-ink-soft)}
+.vkt-row-num{
+  font-size:30px;font-weight:800;color:#ffd9cc;
+  line-height:1;font-style:italic;
+}
+.vkt-row-side{display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+.vkt-row-side .vkt-play-mini{
+  width:38px;height:38px;border-radius:50%;
+  background:#fff0e8;display:grid;place-items:center;
+  transition:background .2s;
+}
+.vkt-row-side .vkt-play-mini:hover{background:var(--vkt-coral)}
+.vkt-row-side .vkt-play-mini svg{width:14px;height:14px}
+.vkt-row-side .vkt-play-mini:hover svg path{fill:#fff}
+
+/* ============ 关键词解析 ============ */
+.vkt-analysis{
+  background:linear-gradient(160deg,#fff,#fff4ec);
+  border:1px solid var(--vkt-line);
+  border-radius:24px;padding:40px clamp(22px,4vw,52px);
+  box-shadow:var(--vkt-shadow);
+}
+.vkt-analysis h2{font-size:clamp(23px,3vw,31px);line-height:1.32;margin-bottom:8px}
+.vkt-analysis-lead{color:var(--vkt-ink-soft);font-size:15.5px;margin-bottom:28px;max-width:820px}
+.vkt-analysis h3{
+  font-size:18.5px;margin:26px 0 10px;
+  display:flex;align-items:center;gap:10px;
+}
+.vkt-analysis h3::before{
+  content:"";width:7px;height:7px;border-radius:2px;
+  background:var(--vkt-coral);flex:0 0 auto;transform:rotate(45deg);
+}
+.vkt-analysis p{
+  font-size:15px;color:#55483f;margin-bottom:12px;
+  text-align:justify;
+}
+.vkt-analysis p strong{color:var(--vkt-coral-deep)}
+.vkt-analysis-quote{
+  margin-top:26px;padding:18px 22px;border-left:4px solid var(--vkt-coral);
+  background:#fff;border-radius:0 14px 14px 0;
+  font-size:14.5px;color:var(--vkt-ink-soft);
+}
+
+/* ============ 专题 ============ */
+.vkt-topic-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));
+  gap:22px;
+}
+.vkt-topic-card{
+  background:#fff;border:1px solid var(--vkt-line);
+  border-radius:var(--vkt-radius);overflow:hidden;
+  box-shadow:0 6px 20px rgba(203,120,90,.08);
+  display:flex;flex-direction:column;
+  transition:transform .2s,box-shadow .2s;
+}
+.vkt-topic-card:hover{transform:translateY(-4px);box-shadow:0 18px 38px rgba(203,120,90,.17)}
+.vkt-topic-cover{aspect-ratio:16/9;overflow:hidden;background:#ffe9dc}
+.vkt-topic-cover svg{width:100%;height:100%}
+.vkt-topic-body{padding:18px 20px 22px;display:flex;flex-direction:column;gap:11px;flex:1}
+.vkt-topic-body h3{font-size:17.5px;line-height:1.4}
+.vkt-topic-body>p{font-size:13.8px;color:var(--vkt-ink-soft)}
+.vkt-topic-status{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:12px;color:#2f8a4a;font-weight:700;
+}
+.vkt-topic-status i{width:7px;height:7px;border-radius:50%;background:#3ecf7c;box-shadow:0 0 0 4px rgba(62,207,124,.16)}
+.vkt-topic-items{margin-top:2px;display:grid;gap:8px}
+.vkt-topic-items li{
+  font-size:13.4px;color:var(--vkt-ink-soft);
+  padding-left:16px;position:relative;line-height:1.6;
+}
+.vkt-topic-items li::before{
+  content:"";position:absolute;left:0;top:9px;
+  width:5px;height:5px;border-radius:50%;background:var(--vkt-amber);
+}
+
+/* ============ 创作者 ============ */
+.vkt-author-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr));
+  gap:20px;
+}
+.vkt-author-card{
+  background:#fff;border:1px solid var(--vkt-line);
+  border-radius:var(--vkt-radius);padding:22px 20px;
+  box-shadow:0 6px 18px rgba(203,120,90,.07);
+  display:flex;flex-direction:column;gap:12px;
+  transition:transform .2s,box-shadow .2s;
+  cursor:pointer;
+}
+.vkt-author-card:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(203,120,90,.16)}
+.vkt-author-head{display:flex;align-items:center;gap:13px}
+.vkt-avatar{
+  width:52px;height:52px;border-radius:16px;flex:0 0 auto;
+  display:grid;place-items:center;color:#fff;
+  font-weight:800;font-size:20px;letter-spacing:.02em;
+  box-shadow:0 8px 18px rgba(203,120,90,.2);
+}
+.vkt-author-head h3{font-size:16.5px;line-height:1.3}
+.vkt-author-head span{font-size:12.5px;color:#98897f}
+.vkt-author-card p{font-size:13.6px;color:var(--vkt-ink-soft);line-height:1.7}
+.vkt-author-nums{display:flex;gap:20px;font-size:12.5px;color:#98897f;padding-top:4px;border-top:1px dashed var(--vkt-line)}
+.vkt-author-nums b{display:block;font-size:15px;color:var(--vkt-ink);font-weight:700}
+.vkt-author-more{
+  font-size:12.5px;font-weight:700;color:var(--vkt-coral-deep);
+  display:inline-flex;align-items:center;gap:5px;
+}
+
+/* ============ 评价 ============ */
+.vkt-comment-cols{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));
+  gap:18px;
+}
+.vkt-comment{
+  background:#fff;border:1px solid var(--vkt-line);
+  border-radius:14px;padding:18px 20px;
+  display:flex;flex-direction:column;gap:10px;
+  box-shadow:0 4px 14px rgba(203,120,90,.06);
+}
+.vkt-comment-head{display:flex;align-items:center;gap:10px}
+.vkt-comment-avatar{
+  width:34px;height:34px;border-radius:50%;flex:0 0 auto;
+  display:grid;place-items:center;font-size:13px;font-weight:800;color:#fff;
+}
+.vkt-comment-head b{font-size:13.5px;display:block;line-height:1.3}
+.vkt-comment-head span{font-size:11.5px;color:#a99a90}
+.vkt-comment p{font-size:13.8px;color:#55483f;line-height:1.7}
+.vkt-stars{display:flex;gap:2px}
+.vkt-stars svg{width:13px;height:13px}
+.vkt-comment-foot{font-size:11.5px;color:#a99a90;display:flex;gap:14px}
+
+/* ============ 榜单 ============ */
+.vkt-rank-wrap{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));
+  gap:22px;
+}
+.vkt-rank-card{
+  background:#fff;border:1px solid var(--vkt-line);
+  border-radius:var(--vkt-radius);padding:22px;
+  box-shadow:0 6px 20px rgba(203,120,90,.08);
+}
+.vkt-rank-card>h3{
+  font-size:16.5px;display:flex;align-items:center;gap:9px;
+  margin-bottom:16px;padding-bottom:12px;
+  border-bottom:1px solid var(--vkt-line);
+}
+.vkt-rank-card>h3 i{
+  width:26px;height:26px;border-radius:8px;
+  background:linear-gradient(135deg,var(--vkt-coral),var(--vkt-amber));
+  display:grid;place-items:center;
+}
+.vkt-rank-card>h3 i svg{width:13px;height:13px}
+.vkt-rank-list{display:grid;gap:11px}
+.vkt-rank-item{
+  display:grid;grid-template-columns:24px minmax(0,1fr) auto;
+  gap:10px;align-items:center;font-size:13.5px;
+}
+.vkt-rank-item em{
+  font-style:normal;font-weight:800;font-size:15px;
+  color:#c9b8ad;text-align:center;
+}
+.vkt-rank-item:nth-child(1) em{color:var(--vkt-coral)}
+.vkt-rank-item:nth-child(2) em{color:var(--vkt-amber)}
+.vkt-rank-item:nth-child(3) em{color:#d9a35b}
+.vkt-rank-item span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--vkt-ink-soft)}
+.vkt-rank-item b{font-size:12.5px;color:#98897f;font-weight:600}
+
+/* ============ FAQ ============ */
+.vkt-faq{display:grid;gap:12px;max-width:880px}
+.vkt-faq details{
+  background:#fff;border:1px solid var(--vkt-line);
+  border-radius:14px;padding:0 20px;
+  box-shadow:0 4px 14px rgba(203,120,90,.06);
+  transition:border-color .2s;
+}
+.vkt-faq details[open]{border-color:#ffcdbe}
+.vkt-faq summary{
+  list-style:none;cursor:pointer;
+  padding:16px 0;font-size:15px;font-weight:600;
+  display:flex;align-items:center;gap:12px;
+}
+.vkt-faq summary::-webkit-details-marker{display:none}
+.vkt-faq summary::after{
+  content:"+";margin-left:auto;font-size:20px;font-weight:400;
+  color:var(--vkt-coral);transition:transform .25s;
+  line-height:1;
+}
+.vkt-faq details[open] summary::after{transform:rotate(45deg)}
+.vkt-faq details p{
+  font-size:14px;color:var(--vkt-ink-soft);
+  padding:0 0 18px;line-height:1.8;
+  border-top:1px dashed var(--vkt-line);padding-top:14px;
+}
+
+/* ============ 企业动态 ============ */
+.vkt-news-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));
+  gap:18px;
+}
+.vkt-news-card{
+  background:#fff;border:1px solid var(--vkt-line);
+  border-radius:14px;padding:20px;
+  display:flex;flex-direction:column;gap:9px;
+  box-shadow:0 4px 14px rgba(203,120,90,.06);
+  transition:transform .2s,border-color .2s;
+}
+.vkt-news-card:hover{transform:translateY(-3px);border-color:#ffd9ca}
+.vkt-news-date{
+  font-size:12px;color:#a99a90;letter-spacing:.06em;font-weight:600;
+}
+.vkt-news-card h3{font-size:15.5px;line-height:1.45}
+.vkt-news-card p{font-size:13.4px;color:var(--vkt-ink-soft)}
+
+/* ============ 合作 ============ */
+.vkt-partner-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(min(50%,150px),1fr));
+  gap:14px;
+}
+.vkt-partner{
+  background:#fff;border:1px solid var(--vkt-line);
+  border-radius:12px;padding:18px 14px;
+  display:flex;align-items:center;justify-content:center;gap:9px;
+  font-size:14px;font-weight:600;color:var(--vkt-ink-soft);
+  transition:transform .2s,border-color .2s,color .2s;
+}
+.vkt-partner:hover{transform:translateY(-2px);border-color:#ffcdbe;color:var(--vkt-coral-deep)}
+.vkt-partner i{
+  width:26px;height:26px;border-radius:8px;display:grid;place-items:center;
+  font-size:12px;font-weight:800;color:#fff;font-style:normal;
+}
+
+/* ============ 投稿 CTA ============ */
+.vkt-cta{
+  background:linear-gradient(120deg,#ff8a72,#ff6f61 52%,#ffb454);
+  border-radius:26px;padding:clamp(30px,5vw,54px);
+  color:#fff;display:flex;flex-wrap:wrap;align-items:center;
+  justify-content:space-between;gap:26px;
+  box-shadow:0 22px 50px rgba(255,111,97,.32);
+}
+.vkt-cta h2{font-size:clamp(22px,3vw,30px);line-height:1.3;margin-bottom:8px}
+.vkt-cta p{font-size:14.5px;opacity:.92;max-width:560px}
+.vkt-cta .vkt-btn-ghost{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.6);color:#fff}
+.vkt-cta .vkt-btn-ghost:hover{background:#fff;color:var(--vkt-coral-deep)}
+.vkt-cta .vkt-btn-primary{background:#fff;color:var(--vkt-coral-deep);box-shadow:none}
+.vkt-cta .vkt-btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(0,0,0,.14)}
+
+/* ============ 页脚 ============ */
+.vkt-footer{
+  background:#2b2320;color:#e9ddd4;
+  padding:56px 0 26px;margin-top:0;
+}
+.vkt-footer-grid{
+  display:grid;grid-template-columns:minmax(0,1.6fr) repeat(3,minmax(0,1fr));
+  gap:36px;padding-bottom:36px;
+  border-bottom:1px solid rgba(255,255,255,.1);
+}
+.vkt-footer-brand p{
+  font-size:13.4px;color:#b8a89d;margin-top:14px;max-width:340px;line-height:1.8;
+}
+.vkt-footer-logo{display:flex;align-items:center;gap:11px}
+.vkt-footer-logo .vkt-logo-mark{box-shadow:none}
+.vkt-footer-logo strong{font-size:17px;color:#fff}
+.vkt-footer-logo span{display:block;font-size:11px;color:#a3938a;letter-spacing:.14em}
+.vkt-footer h4{font-size:14px;color:#fff;margin-bottom:14px;letter-spacing:.03em}
+.vkt-footer ul{display:grid;gap:9px}
+.vkt-footer ul a,.vkt-footer ul li{font-size:13px;color:#b8a89d;transition:color .2s}
+.vkt-footer ul a:hover{color:var(--vkt-amber)}
+.vkt-footer-bottom{
+  padding-top:22px;display:flex;flex-wrap:wrap;gap:12px;
+  justify-content:space-between;font-size:12.4px;color:#93847a;
+}
+.vkt-footer-bottom .vkt-footer-links{display:flex;flex-wrap:wrap;gap:16px}
+.vkt-footer-bottom a:hover{color:var(--vkt-amber)}
+
+/* ============ 回到顶部 ============ */
+.vkt-top-btn{
+  position:fixed;right:22px;bottom:26px;z-index:55;
+  width:46px;height:46px;border-radius:14px;
+  background:var(--vkt-coral);color:#fff;
+  display:grid;place-items:center;
+  box-shadow:0 12px 26px rgba(255,111,97,.4);
+  opacity:0;pointer-events:none;transform:translateY(12px);
+  transition:opacity .25s,transform .25s;
+}
+.vkt-top-btn.is-show{opacity:1;pointer-events:auto;transform:translateY(0)}
+.vkt-top-btn svg{width:18px;height:18px}
+
+/* ============ Toast ============ */
+.vkt-toast{
+  position:fixed;left:50%;bottom:34px;z-index:120;
+  transform:translateX(-50%) translateY(20px);
+  background:#2b2320;color:#fff;font-size:13.5px;
+  padding:11px 22px;border-radius:999px;
+  box-shadow:0 14px 30px rgba(0,0,0,.24);
+  opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;
+  max-width:calc(100vw - 44px);text-align:center;
+}
+.vkt-toast.is-show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* ============ 弹窗 ============ */
+.vkt-modal{
+  position:fixed;inset:0;z-index:110;
+  background:rgba(43,35,32,.5);
+  display:grid;place-items:center;padding:22px;
+  opacity:0;pointer-events:none;transition:opacity .25s;
+}
+.vkt-modal.is-open{opacity:1;pointer-events:auto}
+.vkt-modal-box{
+  background:#fff;border-radius:20px;
+  max-width:520px;width:100%;padding:28px;
+  box-shadow:0 30px 70px rgba(0,0,0,.3);
+  transform:translateY(14px);transition:transform .25s;
+  max-height:86vh;overflow:auto;
+}
+.vkt-modal.is-open .vkt-modal-box{transform:translateY(0)}
+.vkt-modal-box h3{font-size:19px;margin-bottom:6px}
+.vkt-modal-box .vkt-modal-sub{font-size:13.5px;color:var(--vkt-ink-soft);margin-bottom:18px}
+.vkt-modal-close{
+  float:right;width:32px;height:32px;border-radius:10px;
+  background:#fff5ee;display:grid;place-items:center;color:var(--vkt-ink-soft);
+}
+.vkt-modal-close svg{width:14px;height:14px}
+.vkt-form-field{display:grid;gap:6px;margin-bottom:14px}
+.vkt-form-field label{font-size:13px;font-weight:600;color:var(--vkt-ink-soft)}
+.vkt-form-field input,.vkt-form-field textarea,.vkt-form-field select{
+  width:100%;border:1px solid var(--vkt-line);border-radius:10px;
+  padding:10px 13px;font-size:14px;font-family:inherit;
+  background:#fffaf6;outline:none;color:var(--vkt-ink);
+  transition:border-color .2s;
+}
+.vkt-form-field input:focus,.vkt-form-field textarea:focus,.vkt-form-field select:focus{border-color:var(--vkt-coral)}
+.vkt-form-field textarea{resize:vertical;min-height:88px}
+.vkt-modal-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:6px}
+.vkt-author-modal-avatar{
+  width:64px;height:64px;border-radius:18px;
+  display:grid;place-items:center;color:#fff;font-weight:800;font-size:24px;
+  margin-bottom:14px;
+}
+.vkt-author-modal-stats{display:flex;gap:24px;margin:14px 0;font-size:12.5px;color:#98897f}
+.vkt-author-modal-stats b{display:block;font-size:16px;color:var(--vkt-ink)}
+
+/* 隐藏类 */
+.vkt-hidden{display:none !important}
+
+/* ============ 响应式 ============ */
+@media (max-width:960px){
+  :root{--vkt-head-h:112px}
+  .vkt-hero-grid{grid-template-columns:1fr;gap:34px}
+  .vkt-hero-visual{order:-1;max-width:520px;margin:0 auto;width:100%}
+  .vkt-focus-grid{grid-template-columns:1fr}
+  .vkt-footer-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:820px){
+  .vkt-nav,.vkt-search{display:none}
+  .vkt-burger{display:grid}
+  .vkt-header-inner{padding:12px 18px}
+  .vkt-section{padding:48px 0}
+}
+@media (max-width:640px){
+  .vkt-hero{padding:40px 0 52px}
+  .vkt-hero-stats{grid-template-columns:1fr 1fr}
+  .vkt-video-row{grid-template-columns:1fr;gap:10px}
+  .vkt-row-side{flex-direction:row;align-items:center;justify-content:flex-start}
+  .vkt-row-num{font-size:24px}
+  .vkt-focus-card{grid-template-columns:minmax(0,64px) minmax(0,1fr)}
+  .vkt-footer-grid{grid-template-columns:1fr;gap:26px}
+  .vkt-cta{flex-direction:column;align-items:flex-start}
+  .vkt-announce{font-size:12.5px;padding:8px 14px;gap:10px}
+  .vkt-announce-link{display:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- ============ 吸顶：公告条 + 页头 ============ -->
+<div class="vkt-sticky-wrap">
+  <div class="vkt-announce" role="note" aria-label="最新公告">
+    <span class="vkt-announce-tag">最新发布</span>
+    <div class="vkt-announce-track" id="vktAnnounceTrack">
+      <div class="vkt-announce-item is-on"><b>11月22日</b>《快乐解压实验室·冬季场》第 12 期上线，本期走进社区共创现场</div>
+      <div class="vkt-announce-item"><b>11月20日</b>「挠痒痒剧场」原创短剧专题开放征稿，入选作品将获得首页焦点位推荐</div>
+      <div class="vkt-announce-item"><b>11月17日</b>创作者激励计划第二季启动，面向生活影像方向开放报名通道</div>
+      <div class="vkt-announce-item"><b>11月12日</b>官方高清素材库更新 86 组镜头，全部支持下载用于二次创作</div>
+    </div>
+    <a class="vkt-announce-link" href="#vktNews">查看全部动态</a>
+  </div>
+
+  <header class="vkt-header">
+    <div class="vkt-header-inner">
+      <a class="vkt-logo" href="#vktTop" aria-label="vk挠痒痒首页">
+        <span class="vkt-logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <circle cx="8.5" cy="9" r="1.9" fill="#fff"/>
+            <circle cx="15.5" cy="9" r="1.9" fill="#fff"/>
+            <path d="M7 14.5c1.3 2 3 3 5 3s3.7-1 5-3" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="vkt-logo-text">
+          <strong>vk挠痒痒</strong>
+          <span>官方网站 · 快乐影像社区</span>
+        </span>
+      </a>
+
+      <nav class="vkt-nav" aria-label="主导航">
+        <a href="#vktFocus" class="is-active">焦点内容</a>
+        <a href="#vktVideos">视频频道</a>
+        <a href="#vktAnalysis">品牌解读</a>
+        <a href="#vktTopics">原创专题</a>
+        <a href="#vktAuthors">创作者</a>
+        <a href="#vktRank">榜单</a>
+        <a href="#vktFaq">帮助</a>
+      </nav>
+
+      <div class="vkt-search" id="vktSearch">
+        <input type="search" id="vktSearchInput" placeholder="搜索视频 / 创作者" aria-label="站内搜索">
+        <button class="vkt-search-btn" id="vktSearchBtn" aria-label="执行搜索">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="11" cy="11" r="6.4" stroke="#fff" stroke-width="2"/>
+            <path d="M16 16l4 4" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <ul class="vkt-search-hint" id="vktSearchHint" aria-live="polite"></ul>
+      </div>
+
+      <button class="vkt-burger" id="vktBurger" aria-label="展开导航菜单" aria-expanded="false">
+        <span></span>
+      </button>
+    </div>
+    <nav class="vkt-mobile-nav" id="vktMobileNav" aria-label="移动端导航">
+      <a href="#vktFocus">焦点内容</a>
+      <a href="#vktVideos">视频频道</a>
+      <a href="#vktAnalysis">品牌解读</a>
+      <a href="#vktTopics">原创专题</a>
+      <a href="#vktAuthors">创作者矩阵</a>
+      <a href="#vktComments">用户口碑</a>
+      <a href="#vktRank">内容榜单</a>
+      <a href="#vktNews">企业动态</a>
+      <a href="#vktFaq">常见问题</a>
+    </nav>
+  </header>
+</div>
+
+<main id="vktTop">
+
+  <!-- ============ 首屏 ============ -->
+  <section class="vkt-hero" aria-labelledby="vktHeroTitle">
+    <div class="vkt-container vkt-hero-grid">
+      <div class="vkt-hero-copy">
+        <div class="vkt-hero-badge">
+          <i aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l2.4 6.2L21 10l-5 4.3L17.4 21 12 17.5 6.6 21 8 14.3 3 10l6.6-.8L12 3z" fill="#fff"/></svg>
+          </i>
+          官方网站 · 持续运营第 6 年
+        </div>
+        <h1 id="vktHeroTitle"><em>vk挠痒痒</em>官网入口</h1>
+        <p class="vkt-hero-sub">把快乐做成内容，让解压成为一种日常习惯</p>
+        <p class="vkt-hero-intro">
+          作为专注「轻松解压」垂直领域的原创视频品牌，vk挠痒痒官方网站聚合精品短剧、生活实验、访谈与社区共创内容。我们以正版高清影像与稳定的内容生态，陪伴每一位创作者与观众在忙碌里找到片刻轻快的呼吸。
+        </p>
+        <div class="vkt-hero-actions">
+          <a class="vkt-btn vkt-btn-primary" href="#vktVideos">
+            进入视频频道
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="vkt-btn vkt-btn-ghost" href="#vktTopics">浏览原创专题</a>
+          <button class="vkt-btn vkt-btn-ghost" id="vktOpenSubmitHero" type="button">投稿入口</button>
+        </div>
+        <div class="vkt-hero-stats">
+          <div class="vkt-stat"><b data-vkt-count="1280">1,280+</b><span>原创视频作品</span></div>
+          <div class="vkt-stat"><b data-vkt-count="365">365</b><span>位常驻创作者</span></div>
+          <div class="vkt-stat"><b data-vkt-count="98">98%</b><span>社区好评率</span></div>
+        </div>
+      </div>
+
+      <div class="vkt-hero-visual">
+        <div class="vkt-hero-frame">
+          <svg viewBox="0 0 640 480" role="img" aria-label="vk挠痒痒品牌主视觉：暖色舞台上人物被轻松节目逗笑">
+            <defs>
+              <linearGradient id="vktHeroBg" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#ffe3cc"/>
+                <stop offset=".55" stop-color="#ffb98f"/>
+                <stop offset="1" stop-color="#ff7f6b"/>
+              </linearGradient>
+              <linearGradient id="vktHeroSpot" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#fff7ec" stop-opacity=".92"/>
+                <stop offset="1" stop-color="#fff7ec" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <rect width="640" height="480" fill="url(#vktHeroBg)"/>
+            <ellipse cx="320" cy="450" rx="290" ry="52" fill="#e8624c" opacity=".28"/>
+            <path d="M120 0 L260 330 L60 330 Z" fill="url(#vktHeroSpot)" opacity=".7"/>
+            <path d="M520 0 L470 300 L590 300 Z" fill="url(#vktHeroSpot)" opacity=".5"/>
+            <rect x="60" y="330" width="520" height="96" rx="22" fill="#fff3e6" opacity=".6"/>
+            <circle cx="250" cy="222" r="76" fill="#fff6ee"/>
+            <circle cx="250" cy="222" r="64" fill="#ffd9bf"/>
+            <circle cx="228" cy="210" r="7" fill="#3b2b25"/>
+            <circle cx="274" cy="210" r="7" fill="#3b2b25"/>
+            <path d="M222 244 Q250 272 278 244" stroke="#3b2b25" stroke-width="7" fill="none" stroke-linecap="round"/>
+            <path d="M196 168 Q226 146 258 158" stroke="#e8624c" stroke-width="6" fill="none" stroke-linecap="round"/>
+            <path d="M296 168 Q322 150 346 162" stroke="#e8624c" stroke-width="6" fill="none" stroke-linecap="round"/>
+            <rect x="176" y="300" width="148" height="96" rx="34" fill="#ff8f74"/>
+            <circle cx="418" cy="240" r="58" fill="#fff6ee"/>
+            <circle cx="418" cy="240" r="48" fill="#ffcfa8"/>
+            <circle cx="402" cy="232" r="6" fill="#3b2b25"/>
+            <circle cx="434" cy="232" r="6" fill="#3b2b25"/>
+            <path d="M400 256 Q418 274 436 256" stroke="#3b2b25" stroke-width="6" fill="none" stroke-linecap="round"/>
+            <rect x="368" y="300" width="104" height="90" rx="28" fill="#ffb454"/>
+            <g opacity=".85">
+              <circle cx="120" cy="118" r="10" fill="#fff"/>
+              <circle cx="540" cy="132" r="7" fill="#fff"/>
+              <circle cx="500" cy="86" r="5" fill="#fff"/>
+              <circle cx="88" cy="260" r="6" fill="#fff"/>
+            </g>
+            <path d="M60 400 Q160 372 260 400 T460 400 T600 392" stroke="#fff" stroke-width="5" fill="none" opacity=".55" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="vkt-hero-float vkt-hero-float-l">
+          <span class="vkt-dot" aria-hidden="true"></span>今日新增 12 条精品内容
+        </div>
+        <div class="vkt-hero-float vkt-hero-float-r">
+          <span aria-hidden="true">▶</span> 本周播放 86.4 万
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 焦点内容 ============ -->
+  <section class="vkt-section" id="vktFocus" aria-labelledby="vktFocusTitle">
+    <div class="vkt-container">
+      <div class="vkt-section-head">
+        <span class="vkt-eyebrow">Editor's Pick</span>
+        <h2 class="vkt-h2" id="vktFocusTitle">焦点内容 · vk挠痒痒官网本周精选</h2>
+        <p class="vkt-section-lead">编辑部从近 200 条官方发布内容中挑出四组重点推荐，覆盖短剧、生活实验与人物访谈，完整呈现这个品牌对「快乐」的理解。</p>
+      </div>
+
+      <div class="vkt-focus-grid">
+        <article class="vkt-focus-main">
+          <div class="vkt-cover">
+            <svg viewBox="0 0 640 360" role="img" aria-label="焦点视频封面：两个人在暖色客厅里互相逗笑">
+              <defs>
+                <linearGradient id="vktFocusBg" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#fff1e2"/>
+                  <stop offset="1" stop-color="#ffcfae"/>
+                </linearGradient>
+              </defs>
+              <rect width="640" height="360" fill="url(#vktFocusBg)"/>
+              <rect x="46" y="56" width="200" height="150" rx="12" fill="#ffe0c8"/>
+              <rect x="70" y="80" width="152" height="102" rx="8" fill="#ffb98f"/>
+              <circle cx="146" cy="131" r="28" fill="#fff3e6"/>
+              <path d="M118 160 Q146 180 174 160" stroke="#e8624c" stroke-width="5" fill="none" stroke-linecap="round"/>
+              <rect x="300" y="230" width="290" height="92" rx="16" fill="#ff9a7e" opacity=".55"/>
+              <circle cx="360" cy="196" r="46" fill="#fff6ee"/>
+              <circle cx="360" cy="196" r="37" fill="#ffd0aa"/>
+              <circle cx="346" cy="188" r="5.4" fill="#3b2b25"/>
+              <circle cx="374" cy="188" r="5.4" fill="#3b2b25"/>
+              <path d="M344 208 Q360 224 376 208" stroke="#3b2b25" stroke-width="5.5" fill="none" stroke-linecap="round"/>
+              <rect x="330" y="238" width="60" height="62" rx="22" fill="#ff8f74"/>
+              <circle cx="480" cy="206" r="42" fill="#fff6ee"/>
+              <circle cx="480" cy="206" r="34" fill="#ffc79b"/>
+              <circle cx="468" cy="200" r="5" fill="#3b2b25"/>
+              <circle cx="492" cy="200" r="5" fill="#3b2b25"/>
+              <path d="M466 218 Q480 232 494 218" stroke="#3b2b25" stroke-width="5" fill="none" stroke-linecap="round"/>
+              <rect x="452" y="244" width="56" height="58" rx="20" fill="#ffb454"/>
+              <path d="M60 300 Q180 276 300 300 T560 296" stroke="#fff" stroke-width="4" fill="none" opacity=".7" stroke-linecap="round"/>
+            </svg>
+            <div class="vkt-cover-play">
+              <button class="vkt-play-btn" type="button" aria-label="播放焦点视频">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5-11-6.5z" fill="#e2523f"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="vkt-focus-body">
+            <div class="vkt-video-row-tags">
+              <span class="vkt-tag">原创短剧</span>
+              <span class="vkt-tag vkt-tag-amber">第三季</span>
+              <span class="vkt-tag vkt-tag-green">官方发布</span>
+            </div>
+            <h3>《挠痒痒剧场》第三季第 8 集：当客厅变成一场没有输赢的游戏</h3>
+            <p>本期把镜头对准普通人的家庭客厅，用三组真实互动实验记录「笑出声」的瞬间。没有剧本台词，只有被生活逗乐的即兴反应，是品牌今年播放与收藏双榜领先的精品内容。</p>
+            <div class="vkt-meta">
+              <b>创作者：慢慢笑的树</b><span>·</span><span>播放 42.8 万</span><span>·</span><span>点赞 3.2 万</span><span>·</span><span>收藏 1.9 万</span>
+            </div>
+            <div class="vkt-actions">
+              <button class="vkt-mini-btn" type="button" data-vkt-like aria-pressed="false">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 20s-7-4.4-7-9.2C5 7.6 7 6 9.2 6c1.3 0 2.2.6 2.8 1.4C12.6 6.6 13.5 6 14.8 6 17 6 19 7.6 19 10.8 19 15.6 12 20 12 20z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+                <span data-vkt-like-count>3.2 万</span>
+              </button>
+              <button class="vkt-mini-btn" type="button" data-vkt-save aria-pressed="false">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 4h10a1 1 0 0 1 1 1v15l-6-4-6 4V5a1 1 0 0 1 1-1z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+                收藏
+              </button>
+              <button class="vkt-mini-btn" type="button" data-vkt-copy>复制链接</button>
+              <button class="vkt-mini-btn" type="button" data-vkt-report>反馈</button>
+            </div>
+          </div>
+        </article>
+
+        <div class="vkt-focus-side">
+          <article class="vkt-focus-card">
+            <div class="vkt-focus-thumb">
+              <svg viewBox="0 0 120 120" role="img" aria-label="缩略图：窗边的猫与晒太阳的午后">
+                <rect width="120" height="120" fill="#ffe8d2"/>
+                <rect x="14" y="16" width="44" height="46" rx="6" fill="#ffc79b"/>
+                <circle cx="36" cy="40" r="11" fill="#fff3e6"/>
+                <path d="M60 96 Q70 62 92 62 Q106 62 106 84 L106 96 Z" fill="#ff9a7e"/>
+                <circle cx="84" cy="74" r="4" fill="#3b2b25"/>
+                <circle cx="98" cy="74" r="4" fill="#3b2b25"/>
+              </svg>
+            </div>
+            <div>
+              <h3>午后三点的阳光，和一只打哈欠的猫</h3>
+              <p>治愈影像 · 播放 18.6 万 · 治愈系日常记录代表作品</p>
+            </div>
+          </article>
+
+          <article class="vkt-focus-card">
+            <div class="vkt-focus-thumb">
+              <svg viewBox="0 0 120 120" role="img" aria-label="缩略图：城市街头的彩色招牌与行人剪影">
+                <rect width="120" height="120" fill="#ffeede"/>
+                <rect x="12" y="30" width="26" height="76" rx="5" fill="#ffb454"/>
+                <rect x="46" y="14" width="32" height="92" rx="5" fill="#ff8f74"/>
+                <rect x="86" y="44" width="22" height="62" rx="5" fill="#e8624c"/>
+                <circle cx="62" cy="60" r="6" fill="#fff3e6"/>
+                <path d="M62 66 L62 88 M62 72 L52 80 M62 72 L72 80" stroke="#fff3e6" stroke-width="4" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div>
+              <h3>城市探索：在六个街角收集陌生人的笑</h3>
+              <p>在地文化 · 播放 12.4 万 · 社区共创企划入选作品</p>
+            </div>
+          </article>
+
+          <article class="vkt-focus-card">
+            <div class="vkt-focus-thumb">
+              <svg viewBox="0 0 120 120" role="img" aria-label="缩略图：访谈现场两支话筒与录音波形">
+                <rect width="120" height="120" fill="#fff2e6"/>
+                <rect x="26" y="20" width="14" height="34" rx="7" fill="#e8624c"/>
+                <path d="M33 54 v10 M20 64 h26" stroke="#e8624c" stroke-width="5" stroke-linecap="round"/>
+                <rect x="80" y="20" width="14" height="34" rx="7" fill="#ffb454"/>
+                <path d="M87 54 v10 M74 64 h26" stroke="#ffb454" stroke-width="5" stroke-linecap="round"/>
+                <path d="M18 88 q10-14 20 0 t20 0 t20 0 t20 0" stroke="#ff8f74" stroke-width="4" fill="none" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div>
+              <h3>人物访谈：内容创作者如何把快乐做成长期事业</h3>
+              <p>人物访谈 · 播放 9.7 万 · 官网品牌故事系列第 6 期</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 视频频道 ============ -->
+  <section class="vkt-section vkt-section-alt" id="vktVideos" aria-labelledby="vktVideosTitle">
+    <div class="vkt-container">
+      <div class="vkt-section-head">
+        <span class="vkt-eyebrow">Video Channel</span>
+        <h2 class="vkt-h2" id="vktVideosTitle">视频频道 · 每周更新的快乐清单</h2>
+        <p class="vkt-section-lead">vk挠痒痒官网的更新时间固定在每周二、周五，所有内容均为原创正版高清素材，支持站内收藏与二次创作下载。</p>
+      </div>
+
+      <div class="vkt-video-list">
+        <article class="vkt-video-row">
+          <div class="vkt-video-row-main">
+            <div class="vkt-video-row-tags">
+              <span class="vkt-tag">生活实验</span><span class="vkt-tag vkt-tag-amber">高清</span>
+            </div>
+            <h3>七天不笑挑战：当一群认真的人努力忍住笑</h3>
+            <p>把「忍住笑意」做成一场连续七天的社区实验，镜头记录了参与者在办公室、地铁和家里被突然逗笑的真实反应。</p>
+            <div class="vkt-video-row-meta">
+              <span>作者：<b>慢慢笑的树</b></span><span>播放 <b>26.1万</b></span><span>点赞 <b>1.8万</b></span><span>收藏 <b>9,720</b></span>
+            </div>
+          </div>
+          <div class="vkt-row-side">
+            <span class="vkt-row-num">01</span>
+            <button class="vkt-play-mini" type="button" aria-label="播放《七天不笑挑战》">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5-11-6.5z" fill="#e2523f"/></svg>
+            </button>
+          </div>
+        </article>
+
+        <article class="vkt-video-row">
+          <div class="vkt-video-row-main">
+            <div class="vkt-video-row-tags">
+              <span class="vkt-tag vkt-tag-green">教程干货</span><span class="vkt-tag">创作幕后</span>
+            </div>
+            <h3>三分钟学会拍「让人想笑」的短视频：构图、节奏与情绪点</h3>
+            <p>从镜头距离到剪辑卡点，拆解快乐类内容最容易被忽略的 5 个细节，附带官方素材库可直接下载的示范片段。</p>
+            <div class="vkt-video-row-meta">
+              <span>作者：<b>剪辑间的小雨</b></span><span>播放 <b>21.4万</b></span><span>点赞 <b>1.5万</b></span><span>收藏 <b>1.2万</b></span>
+            </div>
+          </div>
+          <div class="vkt-row-side">
+            <span class="vkt-row-num">02</span>
+            <button class="vkt-play-mini" type="button" aria-label="播放《三分钟学会拍让人想笑的短视频》">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5-11-6.5z" fill="#e2523f"/></svg>
+            </button>
+          </div>
+        </article>
+
+        <article class="vkt-video-row">
+          <div class="vkt-video-row-main">
+            <div class="vkt-video-row-tags">
+              <span class="vkt-tag vkt-tag-blue">深度测评</span><span class="vkt-tag">解压工具</span>
+            </div>
+            <h3>六款解压玩具实测：哪一款真的能让人放松下来</h3>
+            <p>用可量化的方式记录心率与表情变化，横向比较材质、手感与耐用度，给出适合不同人群的选购建议。</p>
+            <div class="vkt-video-row-meta">
+              <span>作者：<b>较真的老周</b></span><span>播放 <b>18.9万</b></span><span>点赞 <b>1.1万</b></span><span>收藏 <b>8,430</b></span>
+            </div>
+          </div>
+          <div class="vkt-row-side">
+            <span class="vkt-row-num">03</span>
+            <button class="vkt-play-mini" type="button" aria-label="播放《六款解压玩具实测》">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5-11-6.5z" fill="#e2523f"/></svg>
+            </button>
+          </div>
+        </article>
+
+        <article class="vkt-video-row">
+          <div class="vkt-video-row-main">
+            <div class="vkt-video-row-tags">
+              <span class="vkt-tag">城市探索</span><span class="vkt-tag vkt-tag-amber">在地文化</span>
+            </div>
+            <h3>沿着一条老街走三公里：那些被笑声记住的店铺</h3>
+            <p>走访五家开了十年以上的小店，记录老板们的口头禅与待客方式，构成一份带着温度的城市影像笔记。</p>
+            <div class="vkt-video-row-meta">
+              <span>作者：<b>走路带风的阿澈</b></span><span>播放 <b>16.2万</b></span><span>点赞 <b>9,860</b></span><span>收藏 <b>6,240</b></span>
+            </div>
+          </div>
+          <div class="vkt-row-side">
+            <span class="vkt-row-num">04</span>
+            <button class="vkt-play-mini" type="button" aria-label="播放《沿着一条老街走三公里》">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5-11-6.5z" fill="#e2523f"/></svg>
+            </button>
+          </div>
+        </article>
+
+        <article class="vkt-video-row">
+          <div class="vkt-video-row-main">
+            <div class="vkt-video-row-tags">
+              <span class="vkt-tag vkt-tag-green">亲子成长</span><span class="vkt-tag">日常记录</span>
+            </div>
+            <h3>和孩子一起做一百件好笑的小事：第 17 件到第 24 件</h3>
+            <p>一组没有刻意表演的家庭影像，积木倒塌、面粉撒了一地、雨伞打不开，都被保留成值得回看的片段。</p>
+            <div class="vkt-video-row-meta">
+              <span>作者：<b>布丁妈妈</b></span><span>播放 <b>15.7万</b></span><span>点赞 <b>1.3万</b></span><span>收藏 <b>7,110</b></span>
+            </div>
+          </div>
+          <div class="vkt-row-side">
+            <span class="vkt-row-num">05</span>
+            <button class="vkt-play-mini" type="button" aria-label="播放《和孩子一起做一百件好笑的小事》">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5-11-6.5z" fill="#e2523f"/></svg>
+            </button>
+          </div>
+        </article>
+
+        <article class="vkt-video-row">
+          <div class="vkt-video-row-main">
+            <div class="vkt-video-row-tags">
+              <span class="vkt-tag vkt-tag-blue">知识科普</span><span class="vkt-tag">笑与身体</span>
+            </div>
+            <h3>笑一次身体会发生什么：从呼吸到肌肉的十分钟科普</h3>
+            <p>用动画配合实拍解释笑对人体循环、呼吸与情绪调节的影响，并把结论落到可执行的三条日常建议上。</p>
+            <div class="vkt-video-row-meta">
+              <span>作者：<b>北窗讲故事</b></span><span>播放 <b>14.3万</b></span><span>点赞 <b>1.0万</b></span><span>收藏 <b>5,860</b></span>
+            </div>
+          </div>
+          <div class="vkt-row-side">
+            <span class="vkt-row-num">06</span>
+            <button class="vkt-play-mini" type="button" aria-label="播放《笑一次身体会发生什么》">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5-11-6.5z" fill="#e2523f"/></svg>
+            </button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 品牌深度解析 ============ -->
+  <section class="vkt-section" id="vktAnalysis" aria-labelledby="vktAnalysisTitle">
+    <div class="vkt-container">
+      <div class="vkt-analysis">
+        <span class="vkt-eyebrow">Brand Insight</span>
+        <h2 id="vktAnalysisTitle">vk挠痒痒官网入口背后的品牌逻辑与内容生态</h2>
+        <p class="vkt-analysis-lead">一个以「轻快」命名的视频品牌，如何把快乐从情绪变成内容方法，并在六年时间里形成可持续的社区结构。</p>
+
+        <h3>从一次好笑的日常，到一个有边界的品牌</h3>
+        <p>vk挠痒痒最初并不是一个规划完整的品牌。它诞生于一次普通的家庭拍摄：一台旧相机、一间光线普通的客厅、两个互相逗笑的人。视频上传之后，评论区出现大量相似的留言——「看的时候我也笑了」「很久没有这样放松过」。这让我们意识到，<strong>快乐本身是一种稀缺内容</strong>，但它需要被认真对待，而不是被当作偶然的运气。</p>
+        <p>于是品牌开始确立自己的边界：不追求强烈的刺激，不制造冲突，不靠夸张表演换取注意力。官网入口这四个字对我们而言不是一个流量词，而是一份承诺——用户从官方网站进入后看到的每一条内容，都经过选题、拍摄、剪辑与合规四道流程。我们坚持原创正版与高清画质，也坚持在每条视频的简介里写清楚拍摄背景与创作者信息，让内容可追溯、可讨论、可被二次创作。</p>
+        <p>在垂直领域的深耕并不轻松。轻松类内容看似门槛低，实际对节奏把控与情绪设计的要求极高。一个三分钟的视频，可能要用二十小时去筛选素材，只为找到那个真实的、没有被安排过的笑容。<strong>这正是品牌口碑的来源</strong>：观众能分辨什么是设计出来的热闹，什么是自然发生的快乐。</p>
+
+        <h3>内容生态：创作者、企业与观众的三向关系</h3>
+        <p>作为持续运营的平台，我们把内容生态理解为三层结构。第一层是创作者，他们是内容的源头；第二层是企业团队，负责标准、工具与分发；第三层是观众，他们既是消费者，也是下一轮创作的灵感提供者。这三层之间靠一套公开的机制连接：投稿入口、社区投票、月度榜单与创作激励计划。</p>
+        <p>在创作者侧，官网提供高清素材库、脚本灵感工具与剪辑思路参考。截至目前，官方素材库已更新超过 800 组镜头，全部支持下载并明确标注使用范围。我们相信<strong>降低创作门槛比制造门槛更能带来长期价值</strong>，因此工具本身不设付费墙，只要求使用者标注来源。这一做法让新人创作者的起步周期从平均三个月缩短到三周左右。</p>
+        <p>在企业侧，团队把「品牌故事」与「企业动态」做成固定栏目，每月公开一次内容规划与数据摘要。包括本月新增作品数、社区互动量、创作者激励发放情况与违规内容处理结果。透明不是为了展示，而是为了让社区知道这个平台正在往哪个方向走。我们同样把社会责任放进日常动作里：面向青少年开放影像素养公开课，面向社区开放免费拍摄场地预约，让影响力落到具体的人和具体的空间。</p>
+
+        <h3>为什么官网入口值得被信赖</h3>
+        <p>信息越嘈杂，入口就越重要。很多用户第一次接触这个品牌，是在各种转发与切片里，看到的往往是脱离上下文的十秒钟。官方网站的意义在于提供完整的语境：这条视频属于哪个专题、创作者是谁、拍摄于什么场景、后续有没有更新。我们把这一层信息称为「内容的骨架」，它不显眼，但决定了观众能否真正理解一条作品。</p>
+        <p>我们也清楚，值得信赖需要被持续验证。因此在官网入口的每一个交互细节上，我们都尽量做到可预期：点赞与收藏会即时反馈，复制链接会给出明确提示，反馈与举报通道在每条内容下都能找到，FAQ 覆盖了从账号、投稿到版权的常见问题。用户至上是这个品牌最朴素的原则——<strong>让用户少一次困惑，就多一次停留</strong>。</p>
+        <p>未来一年，我们会把重点放在三件事上：一是把创作者矩阵从 365 位扩展到 500 位，重点扶持生活影像与人物访谈方向；二是上线社区共创专区，让观众直接参与选题投票；三是继续完善官方发布流程，让每一条精品内容都能被准确检索与长期保存。点击官网入口进入的，不只是一个页面，而是一个仍在生长的内容社区。</p>
+
+        <div class="vkt-analysis-quote">
+          我们始终相信：真实的笑不需要被设计，但需要被认真记录。这是 vk挠痒痒作为视频品牌最想长期坚持的一件事。
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 原创专题 ============ -->
+  <section class="vkt-section vkt-section-alt" id="vktTopics" aria-labelledby="vktTopicsTitle">
+    <div class="vkt-container">
+      <div class="vkt-section-head">
+        <span class="vkt-eyebrow">Original Series</span>
+        <h2 class="vkt-h2" id="vktTopicsTitle">原创专题 · 由官网持续运营的长期企划</h2>
+        <p class="vkt-section-lead">专题是 vk挠痒痒内容生态的骨架，每一条专题都有明确的更新节奏与创作标准，让好内容可以被系统性地积累。</p>
+      </div>
+
+      <div class="vkt-topic-grid">
+        <article class="vkt-topic-card">
+          <div class="vkt-topic-cover">
+            <svg viewBox="0 0 480 270" role="img" aria-label="专题封面：舞台灯光下的喜剧互动现场">
+              <defs>
+                <linearGradient id="vktTopic1" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#ffd9b8"/><stop offset="1" stop-color="#ff9a7e"/>
+                </linearGradient>
+              </defs>
+              <rect width="480" height="270" fill="url(#vktTopic1)"/>
+              <path d="M60 0 L150 200 L20 200 Z" fill="#fff6ec" opacity=".55"/>
+              <path d="M420 0 L360 190 L470 190 Z" fill="#fff6ec" opacity=".4"/>
+              <rect x="90" y="196" width="300" height="54" rx="14" fill="#fff3e6" opacity=".7"/>
+              <circle cx="200" cy="132" r="44" fill="#fff6ee"/>
+              <circle cx="200" cy="132" r="35" fill="#ffc79b"/>
+              <circle cx="188" cy="126" r="5" fill="#3b2b25"/>
+              <circle cx="212" cy="126" r="5" fill="#3b2b25"/>
+              <path d="M186 144 Q200 158 214 144" stroke="#3b2b25" stroke-width="5" fill="none" stroke-linecap="round"/>
+              <rect x="170" y="172" width="60" height="48" rx="18" fill="#e8624c"/>
+              <circle cx="300" cy="142" r="38" fill="#fff6ee"/>
+              <circle cx="300" cy="142" r="30" fill="#ffb98f"/>
+              <circle cx="290" cy="138" r="4.4" fill="#3b2b25"/>
+              <circle cx="310" cy="138" r="4.4" fill="#3b2b25"/>
+              <path d="M288 152 Q300 164 312 152" stroke="#3b2b25" stroke-width="4.4" fill="none" stroke-linecap="round"/>
+              <rect x="274" y="176" width="52" height="42" rx="16" fill="#ffb454"/>
+            </svg>
+          </div>
+          <div class="vkt-topic-body">
+            <div class="vkt-topic-status"><i></i>更新至第 12 期</div>
+            <h3>快乐解压实验室</h3>
+            <p>把日常场景当作实验场，用可观察的方式记录「人为什么会笑」，每期邀请不同职业的素人参与。</p>
+            <ul class="vkt-topic-items">
+              <li>第 12 期 · 冬季场：社区共创现场全记录</li>
+              <li>第 11 期 · 办公室里的三分钟暂停</li>
+              <li>第 10 期 · 一个关于打哈欠的连锁反应</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="vkt-topic-card">
+          <div class="vkt-topic-cover">
+            <svg viewBox="0 0 480 270" role="img" aria-label="专题封面：夜间城市街景与散步的人">
+              <defs>
+                <linearGradient id="vktTopic2" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#ffe6cf"/><stop offset="1" stop-color="#ffb454"/>
+                </linearGradient>
+              </defs>
+              <rect width="480" height="270" fill="url(#vktTopic2)"/>
+              <rect x="40" y="90" width="70" height="180" fill="#ff9a7e"/>
+              <rect x="128" y="52" width="84" height="218" fill="#e8624c"/>
+              <rect x="232" y="110" width="66" height="160" fill="#ff8f74"/>
+              <rect x="318" y="70" width="90" height="200" fill="#d9553f"/>
+              <g fill="#fff3e6">
+                <rect x="52" y="108" width="14" height="16" rx="2"/>
+                <rect x="78" y="108" width="14" height="16" rx="2"/>
+                <rect x="52" y="140" width="14" height="16" rx="2"/>
+                <rect x="78" y="140" width="14" height="16" rx="2"/>
+                <rect x="144" y="76" width="18" height="20" rx="2"/>
+                <rect x="174" y="76" width="18" height="20" rx="2"/>
+                <rect x="144" y="112" width="18" height="20" rx="2"/>
+                <rect x="174" y="112" width="18" height="20" rx="2"/>
+              </g>
+              <circle cx="252" cy="220" r="13" fill="#fff6ee"/>
+              <path d="M252 233 v22 M252 242 l-12 10 M252 242 l12 10" stroke="#fff6ee" stroke-width="6" stroke-linecap="round"/>
+              <path d="M0 254 h480" stroke="#fff3e6" stroke-width="3" opacity=".5"/>
+            </svg>
+          </div>
+          <div class="vkt-topic-body">
+            <div class="vkt-topic-status"><i></i>更新至第 9 期</div>
+            <h3>城市笑声地图</h3>
+            <p>用脚步丈量城市里那些让人放松的角落：老式理发店、社区球场、深夜食堂与街角长椅。</p>
+            <ul class="vkt-topic-items">
+              <li>第 9 期 · 五家开了十年以上的小店</li>
+              <li>第 8 期 · 一个社区球场的工作日下午</li>
+              <li>第 7 期 · 深夜食堂里最常被讲的段子</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="vkt-topic-card">
+          <div class="vkt-topic-cover">
+            <svg viewBox="0 0 480 270" role="img" aria-label="专题封面：访谈现场两把椅子与录音设备">
+              <defs>
+                <linearGradient id="vktTopic3" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#fff0e2"/><stop offset="1" stop-color="#ffd0b3"/>
+                </linearGradient>
+              </defs>
+              <rect width="480" height="270" fill="url(#vktTopic3)"/>
+              <rect x="70" y="120" width="110" height="120" rx="16" fill="#ff9a7e"/>
+              <rect x="86" y="96" width="78" height="34" rx="14" fill="#e8624c"/>
+              <rect x="300" y="120" width="110" height="120" rx="16" fill="#ffb454"/>
+              <rect x="316" y="96" width="78" height="34" rx="14" fill="#ff8f74"/>
+              <rect x="212" y="150" width="16" height="60" rx="8" fill="#3b2b25"/>
+              <circle cx="220" cy="138" r="18" fill="#3b2b25"/>
+              <circle cx="220" cy="138" r="10" fill="#fff3e6"/>
+              <path d="M196 216 q24-16 48 0" stroke="#3b2b25" stroke-width="5" fill="none" stroke-linecap="round"/>
+              <path d="M156 74 q12-18 24 0 t24 0 t24 0" stroke="#e8624c" stroke-width="4" fill="none" stroke-linecap="round" opacity=".7"/>
+            </svg>
+          </div>
+          <div class="vkt-topic-body">
+            <div class="vkt-topic-status"><i></i>更新至第 6 期</div>
+            <h3>把快乐做成事业的人</h3>
+            <p>对话长期在生活影像方向坚持的创作者，聊选题、聊收入结构、聊如何面对瓶颈与倦怠。</p>
+            <ul class="vkt-topic-items">
+              <li>第 6 期 · 把快乐做成长期事业的可能路径</li>
+              <li>第 5 期 · 一位剪辑师的十年与三次转型</li>
+              <li>第 4 期 · 素人创作者如何找到自己的镜头语言</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 创作者 ============ -->
+  <section class="vkt-section" id="vktAuthors" aria-labelledby="vktAuthorsTitle">
+    <div class="vkt-container">
+      <div class="vkt-section-head">
+        <span class="vkt-eyebrow">Creators</span>
+        <h2 class="vkt-h2" id="vktAuthorsTitle">创作者矩阵 · 官网签约与社区常驻作者</h2>
+        <p class="vkt-section-lead">点击任意创作者卡片可查看完整档案。以下六位是本月内容贡献与社区互动表现最活跃的作者。</p>
+      </div>
+
+      <div class="vkt-author-grid">
+        <article class="vkt-author-card" data-vkt-author="慢慢笑的树" tabindex="0" role="button" aria-label="查看创作者 慢慢笑的树 的档案">
+          <div class="vkt-author-head">
+            <div class="vkt-avatar" style="background:linear-gradient(135deg,#ff8a72,#e2523f)">树</div>
+            <div>
+              <h3>慢慢笑的树</h3>
+              <span>原创短剧 · 生活实验</span>
+            </div>
+          </div>
+          <p>擅长把日常场景改写成轻喜剧结构，镜头语言松弛自然。坚持不用罐头笑声，所有反应都来自真实拍摄现场，是品牌短剧方向的核心创作者之一。</p>
+          <div class="vkt-author-nums">
+            <span>作品 <b>146</b></span>
+            <span>粉丝 <b>28.4万</b></span>
+          </div>
+          <span class="vkt-author-more">查看档案 →</span>
+        </article>
+
+        <article class="vkt-author-card" data-vkt-author="剪辑间的小雨" tabindex="0" role="button" aria-label="查看创作者 剪辑间的小雨 的档案">
+          <div class="vkt-author-head">
+            <div class="vkt-avatar" style="background:linear-gradient(135deg,#ffb454,#e0882a)">雨</div>
+            <div>
+              <h3>剪辑间的小雨</h3>
+              <span>教程干货 · 创作幕后</span>
+            </div>
+          </div>
+          <p>从业七年的剪辑指导，课程以「可复现」著称。她习惯在每条教学视频末尾附上工程文件结构说明，让新手能按步骤完成一次完整剪辑。</p>
+          <div class="vkt-author-nums">
+            <span>作品 <b>98</b></span>
+            <span>粉丝 <b>19.7万</b></span>
+          </div>
+          <span class="vkt-author-more">查看档案 →</span>
+        </article>
+
+        <article class="vkt-author-card" data-vkt-author="走路带风的阿澈" tabindex="0" role="button" aria-label="查看创作者 走路带风的阿澈 的档案">
+          <div class="vkt-author-head">
+            <div class="vkt-avatar" style="background:linear-gradient(135deg,#5aa9e6,#2c62b8)">澈</div>
+            <div>
+              <h3>走路带风的阿澈</h3>
+              <span>城市探索 · 在地文化</span>
+            </div>
+          </div>
+          <p>常驻城市影像创作者，拍摄习惯是「先走三公里再开机」。作品以长镜头与现场声见长，擅长把普通街景拍出叙事感，社区投票多次入选月度精选。</p>
+          <div class="vkt-author-nums">
+            <span>作品 <b>121</b></span>
+            <span>粉丝 <b>16.3万</b></span>
+          </div>
+          <span class="vkt-author-more">查看档案 →</span>
+        </article>
+
+        <article class="vkt-author-card" data-vkt-author="较真的老周" tabindex="0" role="button" aria-label="查看创作者 较真的老周 的档案">
+          <div class="vkt-author-head">
+            <div class="vkt-avatar" style="background:linear-gradient(135deg,#6fbf8b,#2f8a4a)">周</div>
+            <div>
+              <h3>较真的老周</h3>
+              <span>深度测评 · 实用技巧</span>
+            </div>
+          </div>
+          <p>理工背景出身的测评作者，坚持用数据说话。每条测评都公开测试方法与样本量，也会主动标注不确定的结论，被观众称为「最不怕被打脸的测评人」。</p>
+          <div class="vkt-author-nums">
+            <span>作品 <b>87</b></span>
+            <span>粉丝 <b>14.2万</b></span>
+          </div>
+          <span class="vkt-author-more">查看档案 →</span>
+        </article>
+
+        <article class="vkt-author-card" data-vkt-author="布丁妈妈" tabindex="0" role="button" aria-label="查看创作者 布丁妈妈 的档案">
+          <div class="vkt-author-head">
+            <div class="vkt-avatar" style="background:linear-gradient(135deg,#c98fe0,#8b52b0)">布</div>
+            <div>
+              <h3>布丁妈妈</h3>
+              <span>亲子成长 · 日常记录</span>
+            </div>
+          </div>
+          <p>记录型创作者，镜头里没有台词也没有配乐堆叠。她把孩子的情绪起伏完整保留下来，让很多家长第一次意识到，日常本身就有足够强的感染力。</p>
+          <div class="vkt-author-nums">
+            <span>作品 <b>73</b></span>
+            <span>粉丝 <b>11.8万</b></span>
+          </div>
+          <span class="vkt-author-more">查看档案 →</span>
+        </article>
+
+        <article class="vkt-author-card" data-vkt-author="北窗讲故事" tabindex="0" role="button" aria-label="查看创作者 北窗讲故事 的档案">
+          <div class="vkt-author-head">
+            <div class="vkt-avatar" style="background:linear-gradient(135deg,#7f8fa6,#3f4a5a)">北</div>
+            <div>
+              <h3>北窗讲故事</h3>
+              <span>知识科普 · 情感故事</span>
+            </div>
+          </div>
+          <p>擅长把抽象概念讲成具体故事，动画与实拍结合是他的标志手法。更新节奏稳定，每期结尾都会给出一句可执行的日常建议，长期位列口碑榜前列。</p>
+          <div class="vkt-author-nums">
+            <span>作品 <b>64</b></span>
+            <span>粉丝 <b>10.5万</b></span>
+          </div>
+          <span class="vkt-author-more">查看档案 →</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 用户评价 ============ -->
+  <section class="vkt-section vkt-section-alt" id="vktComments" aria-labelledby="vktCommentsTitle">
+    <div class="vkt-container">
+      <div class="vkt-section-head">
+        <span class="vkt-eyebrow">Community Voice</span>
+        <h2 class="vkt-h2" id="vktCommentsTitle">用户口碑 · 来自社区的真实声音</h2>
+        <p class="vkt-section-lead">以下评价来自官网评论区与社区问卷，保留原始语气与长短差异，不做美化处理。</p>
+      </div>
+
+      <div class="vkt-comment-cols">
+        <article class="vkt-comment">
+          <div class="vkt-comment-head">
+            <div class="vkt-comment-avatar" style="background:#e8624c">林</div>
+            <div><b>林间小馆</b><span>2026-11-19</span></div>
+          </div>
+          <div class="vkt-stars" aria-label="五星评价">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.5 6.4L21 10l-5 4.3L17.5 21 12 17.6 6.5 21 8 14.3 3 10l6.5-.6L12 3z" fill="#ffb454"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.5 6.4L21 10l-5 4.3L17.5 21 12 17.6 6.5 21 8 14.3 3 10l6.5-.6L12 3z" fill="#ffb454"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.5 6.4L21 10l-5 4.3L17.5 21 12 17.6 6.5 21 8 14.3 3 10l6.5-.6L12 3z" fill="#ffb454"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.5 6.4L21 10l-5 4.3L17.5 21 12 17.6 6.5 21 8 14.3 3 10l6.5-.6L12 3z" fill="#ffb454"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.5 6.4L21 10l-5 4.3L17.5 21 12 17.6 6.5 21 8 14.3 3 10l6.5-.6L12 3z" fill="#ffb454"/></svg>
+          </div>
+          <p>加班到十一点随手点开官网，结果是笑着看完的。没有什么大道理，就是很单纯的轻松，第二天上班心情都不一样。</p>
+          <div class="vkt-comment-foot"><span>有用 128</span><span>回复 6</span></div>
+        </article>
+
+        <article class="vkt-comment">
+          <div class="vkt-comment-head">
+            <div class="vkt-comment-avatar" style="background:#2c62b8">陈</div>
+            <div><b>陈三石</b><span>2026-11-17</span></div>
+          </div>
+          <p>作为做了三年短视频的人，说实话教程类内容我本来没抱期待。但剪辑那期讲节奏点的部分确实有干货，属于可以直接拿去用的技巧。</p>
+          <div class="vkt-comment-foot"><span>有用 96</span><span>回复 11</span></div>
+        </article>
+
+        <article class="vkt-comment">
+          <div class="vkt-comment-head">
+            <div class="vkt-comment-avatar" style="background:#8b52b0">小</div>
+            <div><b>小满不吃香菜</b><span>2026-11-15</span></div>
+          </div>
+          <div class="vkt-stars" aria-label="四星评价">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.5 6.4L21 10l-5 4.3L17.5 21 12 17.6 6.5 21 8 14.3 3 10l6.5-.6L12 3z" fill="#ffb454"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.5 6.4L21 10l-5 4.3L17.5 21 12 17.6 6.5 21 8 14.3 3 10l6.5-.6L12 3z" fill="#ffb454"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.5 6.4L21 10l-5 4.3L17.5 21 12 17.6 6.5 21 8 14.3 3 10l6.5-.6L12 3z" fill="#ffb454"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.5 6.4L21 10l-5 4.3L17.5 21 12 17.6 6.5 21 8 14.3 3 10l6.5-.6L12 3z" fill="#ffb454"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.5 6.4L21 10l-5 4.3L17.5 21 12 17.6 6.5 21 8 14.3 3 10l6.5-.6L12 3z" fill="#e8d6c6"/></svg>
+          </div>
+          <p>内容是真的好，就是有些专题更新慢一点，等得有点焦急。不过反过来想，慢说明他们在认真做，不是流水线出来的。</p>
+          <div class="vkt-comment-foot"><span>有用 74</span><span>回复 3</span></div>
+        </article>
+
+        <article class="vkt-comment">
+          <div class="vkt-comment-head">
+            <div class="vkt-comment-avatar" style="background:#2f8a4a">阿</div>
+            <div><b>阿澈的邻居</b><span>2026-11-13</span></div>
+          </div>
+          <p>城市那期节目看完就出门走了一圈。原来我每天路过的巷子被拍出来是这个样子，突然觉得住在这里挺幸运的。</p>
+          <div class="vkt-comment-foot"><span>有用 63</span><span>回复 2</span></div>
+        </article>
+
+        <article class="vkt-comment">
+          <div class="vkt-comment-head">
+            <div class="vkt-comment-avatar" style="background:#e0882a">柠</div>
+            <div><b>柠檬汽水加冰</b><span>2026-11-11</span></div>
+          </div>
+          <p>投稿过一次，两周后收到编辑的修改建议，写得很细，连片头三秒怎么处理都标出来了。这种反馈在别处很少遇到，愿意继续投。</p>
+          <div class="vkt-comment-foot"><span>有用 89</span><span>回复 8</span></div>
+        </article>
+
+        <article class="vkt-comment">
+          <div class="vkt-comment-head">
+            <div class="vkt-comment-avatar" style="background:#3f4a5a">老</div>
+            <div><b>老式收音机</b><span>2026-11-09</span></div>
+          </div>
+          <p>孩子四岁，最喜欢那个做小事系列。看完会拉着我一起做，面粉撒一地也无所谓了。这种内容比动画片更耐看。</p>
+          <div class="vkt-comment-foot"><span>有用 57</span><span>回复 4</span></div>
+        </article>
+
+        <article class="vkt-comment">
+          <div class="vkt-comment-head">
+            <div class="vkt-comment-avatar" style="background:#c2542f">南</div>
+            <div><b>南风慢一点</b><span>2026-11-06</span></div>
+          </div>
+          <p>画质是真的高，投到电视上看也不糊。之前在一些地方看到过搬运版本，还是官网的完整版看着舒服，细节都在。</p>
+          <div class="vkt-comment-foot"><span>有用 48</span><span>回复 3</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 榜单 + 企业动态 ============ -->
+  <section class="vkt-section" id="vktRank" aria-labelledby="vktRankTitle">
+    <div class="vkt-container">
+      <div class="vkt-section-head">
+        <span class="vkt-eyebrow">Ranking &amp; News</span>
+        <h2 class="vkt-h2" id="vktRankTitle">内容榜单与企业动态 · 官网每月公开运营数据</h2>
+        <p class="vkt-section-lead">榜单依据播放、互动、收藏与口碑四个维度加权计算，统计周期为最近 30 天，数据同步展示在官网后台。</p>
+      </div>
+
+      <div class="vkt-rank-wrap">
+        <article class="vkt-rank-card">
+          <h3>
+            <i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M7 20V10M12 20V4M17 20v-7" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg></i>
+            热度榜
+          </h3>
+          <ul class="vkt-rank-list">
+            <li class="vkt-rank-item"><em>1</em><span>《挠痒痒剧场》第三季第 8 集</span><b>42.8万</b></li>
+            <li class="vkt-rank-item"><em>2</em><span>七天不笑挑战：忍住笑的实验</span><b>26.1万</b></li>
+            <li class="vkt-rank-item"><em>3</em><span>三分钟学会拍让人想笑的短视频</span><b>21.4万</b></li>
+            <li class="vkt-rank-item"><em>4</em><span>六款解压玩具实测</span><b>18.9万</b></li>
+            <li class="vkt-rank-item"><em>5</em><span>午后三点的阳光与一只猫</span><b>18.6万</b></li>
+          </ul>
+        </article>
+
+        <article class="vkt-rank-card">
+          <h3>
+            <i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l2.4 5.4L20 9l-4 4 1.2 6-5.2-2.8L6.8 19 8 13 4 9l5.6-.6L12 3z" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/></svg></i>
+            新人榜
+          </h3>
+          <ul class="vkt-rank-list">
+            <li class="vkt-rank-item"><em>1</em><span>一只慢吞吞的鲸</span><b>+8,240</b></li>
+            <li class="vkt-rank-item"><em>2</em><span>晾衣服的星期五</span><b>+7,116</b></li>
+            <li class="vkt-rank-item"><em>3</em><span>把日子过成段子</span><b>+6,508</b></li>
+            <li class="vkt-rank-item"><em>4</em><span>窗外有棵石榴树</span><b>+5,902</b></li>
+            <li class="vkt-rank-item"><em>5</em><span>晚风放映员</span><b>+5,340</b></li>
+          </ul>
+        </article>
+
+        <article class="vkt-rank-card">
+          <h3>
+            <i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20s-7-4.4-7-9.2C5 7.6 7 6 9.2 6c1.3 0 2.2.6 2.8 1.4C12.6 6.6 13.5 6 14.8 6 17 6 19 7.6 19 10.8 19 15.6 12 20 12 20z" stroke="#fff" stroke-width="1.9" stroke-linejoin="round"/></svg></i>
+            口碑榜
+          </h3>
+          <ul class="vkt-rank-list">
+            <li class="vkt-rank-item"><em>1</em><span>北窗讲故事</span><b>4.96 分</b></li>
+            <li class="vkt-rank-item"><em>2</em><span>慢慢笑的树</span><b>4.94 分</b></li>
+            <li class="vkt-rank-item"><em>3</em><span>布丁妈妈</span><b>4.91 分</b></li>
+            <li class="vkt-rank-item"><em>4</em><span>剪辑间的小雨</span><b>4.89 分</b></li>
+            <li class="vkt-rank-item"><em>5</em><span>走路带风的阿澈</span><b>4.87 分</b></li>
+          </ul>
+        </article>
+      </div>
+
+      <div style="margin-top:40px" id="vktNews">
+        <h3 style="font-size:20px;margin-bottom:18px;display:flex;align-items:center;gap:10px">
+          <span style="width:8px;height:8px;border-radius:2px;background:var(--vkt-coral);display:inline-block;transform:rotate(45deg)"></span>
+          企业动态 · 官方发布与内容更新
+        </h3>
+        <div class="vkt-news-grid">
+          <article class="vkt-news-card">
+            <span class="vkt-news-date">2026 / 11 / 22</span>
+            <h3>《快乐解压实验室》第 12 期上线</h3>
+            <p>本期走进社区共创现场，记录素人参与者如何在 90 分钟内完成一次完整的短剧拍摄。</p>
+          </article>
+          <article class="vkt-news-card">
+            <span class="vkt-news-date">2026 / 11 / 18</span>
+            <h3>创作者激励计划第二季启动</h3>
+            <p>面向生活影像与人物访谈方向开放报名，官网投稿入口同步更新报名表单与评审标准。</p>
+          </article>
+          <article class="vkt-news-card">
+            <span class="vkt-news-date">2026 / 11 / 12</span>
+            <h3>官方高清素材库更新 86 组镜头</h3>
+            <p>新增冬季室内场景与城市夜景素材，全部支持下载并标注可商用范围，供社区二次创作。</p>
+          </article>
+          <article class="vkt-news-card">
+            <span class="vkt-news-date">2026 / 11 / 05</span>
+            <h3>十月运营数据摘要公开</h3>
+            <p>本月新增原创作品 74 条，社区互动量环比上升 18%，违规内容处理 3 条，均已公示处理结果。</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 合作品牌 ============ -->
+  <section class="vkt-section vkt-section-alt" id="vktPartners" aria-labelledby="vktPartnersTitle">
+    <div class="vkt-container">
+      <div class="vkt-section-head">
+        <span class="vkt-eyebrow">Partners</span>
+        <h2 class="vkt-h2" id="vktPartnersTitle">合作品牌 · 与官网共同推动内容品质的伙伴</h2>
+        <p class="vkt-section-lead">以下伙伴在设备支持、场地协作、公益影像教育等方向与 vk挠痒痒长期合作，共同维护社区的内容品质与创作环境。</p>
+      </div>
+      <div class="vkt-partner-grid">
+        <div class="vkt-partner"><i style="background:#e8624c">光</i>光影器材工坊</div>
+        <div class="vkt-partner"><i style="background:#ffb454">城</i>城市文化促进会</div>
+        <div class="vkt-partner"><i style="background:#2f8a4a">青</i>青禾影像教育</div>
+        <div class="vkt-partner"><i style="background:#2c62b8">纸</i>纸间书店计划</div>
+        <div class="vkt-partner"><i style="background:#8b52b0">慢</i>慢行生活实验室</div>
+        <div class="vkt-partner"><i style="background:#3f4a5a">声</i>声场录音studio</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="vkt-section" id="vktFaq" aria-labelledby="vktFaqTitle">
+    <div class="vkt-container">
+      <div class="vkt-section-head">
+        <span class="vkt-eyebrow">Help Center</span>
+        <h2 class="vkt-h2" id="vktFaqTitle">常见问题 · 关于官网入口与投稿</h2>
+        <p class="vkt-section-lead">这里汇总了社区最常被问到的问题。若仍未解决，可通过页面底部的反馈入口联系编辑团队。</p>
+      </div>
+
+      <div class="vkt-faq">
+        <details open>
+          <summary>如何确认自己访问的是官方网站入口？</summary>
+          <p>建议通过社群置顶信息或官方发布渠道进入，并在页面底部核对品牌信息与备案号。官方页面不会要求输入支付密码或私下转账，也不会以任何理由索取验证码。遇到可疑页面请通过反馈入口告知我们。</p>
+        </details>
+        <details>
+          <summary>官网内容多久更新一次？</summary>
+          <p>视频频道固定在每周二、周五更新，专题栏目按月更新，企业动态与运营数据摘要每月公开一次。遇到特别企划或社区活动，会额外增加更新场次，具体时间会提前在公告条说明。</p>
+        </details>
+        <details>
+          <summary>投稿需要满足哪些条件？</summary>
+          <p>作品需为原创或已获得完整授权，时长建议在 1 至 10 分钟之间，分辨率不低于 1080P。投稿时请附上拍摄背景、参与者授权说明与素材来源。编辑团队会在十个工作日内给出反馈，通过的作品将进入官网推荐池。</p>
+        </details>
+        <details>
+          <summary>官方素材库可以用于商业项目吗？</summary>
+          <p>素材库分为社区可用与商用授权两类，下载页会明确标注使用范围。社区可用素材仅限站内与非商业分享使用；商用需在下载页提交申请并保留授权记录。无论哪类素材，都请标注来源。</p>
+        </details>
+        <details>
+          <summary>为什么有些视频显示为高清，有些不是？</summary>
+          <p>画质取决于创作者上传时的原始文件与转码设置。官网会优先保留原始清晰度，但早期作品受拍摄设备限制可能无法达到当前标准。我们正在分批对经典内容进行修复与重新转码。</p>
+        </details>
+        <details>
+          <summary>看到搬运或侵权内容该怎么办？</summary>
+          <p>可在对应内容下点击「反馈」按钮，选择侵权或搬运类别并填写原始链接。团队会在三个工作日内核实，确认后立即下架并在企业动态中公示处理结果。原创作者的合法权益是我们最优先保护的对象。</p>
+        </details>
+        <details>
+          <summary>社区投票与榜单是如何计算的？</summary>
+          <p>榜单综合播放完成率、互动率、收藏率与用户评分四项指标加权计算，统计周期为最近 30 天。社区投票结果会作为专题选题的重要参考，但不直接决定榜单排名，以避免刷票影响公平性。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 投稿 CTA ============ -->
+  <section class="vkt-section" id="vktSubmit" aria-labelledby="vktSubmitTitle">
+    <div class="vkt-container">
+      <div class="vkt-cta">
+        <div>
+          <h2 id="vktSubmitTitle">把你的日常，交给 vk挠痒痒官网</h2>
+          <p>无论是三分钟的生活记录，还是一段让人忍不住笑出声的即兴互动，都欢迎通过官方投稿入口提交。入选作品将获得官网推荐位、高清素材支持与编辑一对一反馈。</p>
+        </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <button class="vkt-btn vkt-btn-primary" type="button" id="vktOpenSubmit">立即投稿</button>
+          <button class="vkt-btn vkt-btn-ghost" type="button" id="vktOpenFeedback">意见反馈</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ 页脚 ============ -->
+<footer class="vkt-footer">
+  <div class="vkt-container">
+    <div class="vkt-footer-grid">
+      <div class="vkt-footer-brand">
+        <div class="vkt-footer-logo">
+          <span class="vkt-logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <circle cx="8.5" cy="9" r="1.9" fill="#fff"/>
+              <circle cx="15.5" cy="9" r="1.9" fill="#fff"/>
+              <path d="M7 14.5c1.3 2 3 3 5 3s3.7-1 5-3" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <div>
+            <strong>vk挠痒痒</strong>
+            <span>官方网站 · 快乐影像社区</span>
+          </div>
+        </div>
+        <p>vk挠痒痒官方网站，专注轻松解压与快乐互动内容的原创视频品牌。我们以正版高清影像、稳定的内容生态与持续运营的社区机制，陪伴每一位创作者和观众在忙碌中找到片刻轻快。</p>
+      </div>
+      <div>
+        <h4>内容频道</h4>
+        <ul>
+          <li><a href="#vktFocus">焦点内容</a></li>
+          <li><a href="#vktVideos">视频频道</a></li>
+          <li><a href="#vktTopics">原创专题</a></li>
+          <li><a href="#vktRank">内容榜单</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于品牌</h4>
+        <ul>
+          <li><a href="#vktAnalysis">品牌解读</a></li>
+          <li><a href="#vktAuthors">创作者矩阵</a></li>
+          <li><a href="#vktNews">企业动态</a></li>
+          <li><a href="#vktPartners">合作品牌</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>支持与帮助</h4>
+        <ul>
+          <li><a href="#vktFaq">常见问题</a></li>
+          <li><a href="#vktSubmit">投稿入口</a></li>
+          <li><a href="#vktComments">社区口碑</a></li>
+          <li><a href="#vktTop">返回顶部</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="vkt-footer-bottom">
+      <span>© 2020–2026 vk挠痒痒官方网站 · 版权所有 · 持续运营中</span>
+      <div class="vkt-footer-links">
+        <span>内容均为原创或已获授权</span>
+        <a href="#vktFaq">版权说明</a>
+        <a href="#vktFaq">用户协议</a>
+        <span>备案号：示例备案 000000000 号</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ 回到顶部 ============ -->
+<button class="vkt-top-btn" id="vktTopBtn" type="button" aria-label="回到顶部">
+  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 19V6M6 12l6-6 6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<!-- ============ Toast ============ -->
+<div class="vkt-toast" id="vktToast" role="status" aria-live="polite"></div>
+
+<!-- ============ 投稿弹窗 ============ -->
+<div class="vkt-modal" id="vktSubmitModal" role="dialog" aria-modal="true" aria-labelledby="vktSubmitModalTitle">
+  <div class="vkt-modal-box">
+    <button class="vkt-modal-close" type="button" data-vkt-close aria-label="关闭投稿弹窗">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+    </button>
+    <h3 id="vktSubmitModalTitle">投稿入口</h3>
+    <p class="vkt-modal-sub">填写基础信息，编辑团队将在十个工作日内与你联系。作品须为原创或已获得完整授权。</p>
+    <form id="vktSubmitForm">
+      <div class="vkt-form-field">
+        <label for="vktSubmitName">创作者昵称</label>
+        <input id="vktSubmitName" type="text" placeholder="请输入你的昵称" required>
+      </div>
+      <div class="vkt-form-field">
+        <label for="vktSubmitContact">联系方式</label>
+        <input id="vktSubmitContact" type="text" placeholder="邮箱或其他可联系的方式" required>
+      </div>
+      <div class="vkt-form-field">
+        <label for="vktSubmitType">作品方向</label>
+        <select id="vktSubmitType">
+          <option>生活实验</option>
+          <option>原创短剧</option>
+          <option>城市探索</option>
+          <option>人物访谈</option>
+          <option>知识科普</option>
+          <option>亲子成长</option>
+        </select>
+      </div>
+      <div class="vkt-form-field">
+        <label for="vktSubmitDesc">作品简介</label>
+        <textarea id="vktSubmitDesc" placeholder="简单介绍作品内容、时长与拍摄背景"></textarea>
+      </div>
+      <div class="vkt-modal-actions">
+        <button class="vkt-btn vkt-btn-ghost" type="button" data-vkt-close>取消</button>
+        <button class="vkt-btn vkt-btn-primary" type="submit">提交投稿</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- ============ 反馈弹窗 ============ -->
+<div class="vkt-modal" id="vktFeedbackModal" role="dialog" aria-modal="true" aria-labelledby="vktFeedbackModalTitle">
+  <div class="vkt-modal-box">
+    <button class="vkt-modal-close" type="button" data-vkt-close aria-label="关闭反馈弹窗">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+    </button>
+    <h3 id="vktFeedbackModalTitle">意见反馈</h3>
+    <p class="vkt-modal-sub">遇到问题或发现侵权内容，请描述具体情况，我们会在三个工作日内核实处理。</p>
+    <form id="vktFeedbackForm">
+      <div class="vkt-form-field">
+        <label for="vktFeedbackType">反馈类型</label>
+        <select id="vktFeedbackType">
+          <option>播放异常</option>
+          <option>侵权或搬运</option>
+          <option>内容建议</option>
+          <option>账号问题</option>
+          <option>其他</option>
+        </select>
+      </div>
+      <div class="vkt-form-field">
+        <label for="vktFeedbackDesc">详细描述</label>
+        <textarea id="vktFeedbackDesc" placeholder="请描述你遇到的问题与涉及的页面位置" required></textarea>
+      </div>
+      <div class="vkt-modal-actions">
+        <button class="vkt-btn vkt-btn-ghost" type="button" data-vkt-close>取消</button>
+        <button class="vkt-btn vkt-btn-primary" type="submit">提交反馈</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- ============ 作者档案弹窗 ============ -->
+<div class="vkt-modal" id="vktAuthorModal" role="dialog" aria-modal="true" aria-labelledby="vktAuthorModalTitle">
+  <div class="vkt-modal-box">
+    <button class="vkt-modal-close" type="button" data-vkt-close aria-label="关闭作者档案">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+    </button>
+    <div class="vkt-author-modal-avatar" id="vktAuthorModalAvatar">树</div>
+    <h3 id="vktAuthorModalTitle">慢慢笑的树</h3>
+    <p class="vkt-modal-sub" id="vktAuthorModalField">原创短剧 · 生活实验</p>
+    <div class="vkt-author-modal-stats">
+      <span>作品数 <b id="vktAuthorModalWorks">146</b></span>
+      <span>粉丝数 <b id="vktAuthorModalFans">28.4万</b></span>
+    </div>
+    <p id="vktAuthorModalBio" style="font-size:14px;color:var(--vkt-ink-soft);line-height:1.8"></p>
+    <div class="vkt-modal-actions">
+      <button class="vkt-btn vkt-btn-ghost" type="button" data-vkt-close>关闭</button>
+      <button class="vkt-btn vkt-btn-primary" type="button" id="vktAuthorModalFollow">关注创作者</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ---------- 公告条轮播 ---------- */
+  var announceItems = Array.prototype.slice.call(document.querySelectorAll(".vkt-announce-item"));
+  var announceIndex = 0;
+  if (announceItems.length > 1) {
+    setInterval(function () {
+      announceItems[announceIndex].classList.remove("is-on");
+      announceIndex = (announceIndex + 1) % announceItems.length;
+      announceItems[announceIndex].classList.add("is-on");
+    }, 4600);
+  }
+
+  /* ---------- Toast ---------- */
+  var toastEl = document.getElementById("vktToast");
+  var toastTimer = null;
+  function showToast(msg) {
+    toastEl.textContent = msg;
+    toastEl.classList.add("is-show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () {
+      toastEl.classList.remove("is-show");
+    }, 2200);
+  }
+
+  /* ---------- 移动端导航 ---------- */
+  var burger = document.getElementById("vktBurger");
+  var mobileNav = document.getElementById("vktMobileNav");
+  burger.addEventListener("click", function () {
+    var open = mobileNav.classList.toggle("is-open");
+    burger.setAttribute("aria-expanded", open ? "true" : "false");
+    burger.setAttribute("aria-label", open ? "收起导航菜单" : "展开导航菜单");
+  });
+  mobileNav.addEventListener("click", function (e) {
+    if (e.target.tagName === "A") {
+      mobileNav.classList.remove("is-open");
+      burger.setAttribute("aria-expanded", "false");
+    }
+  });
+
+  /* ---------- 搜索 ---------- */
+  var searchWrap = document.getElementById("vktSearch");
+  var searchInput = document.getElementById("vktSearchInput");
+  var searchHint = document.getElementById("vktSearchHint");
+  var searchBtn = document.getElementById("vktSearchBtn");
+
+  var searchPool = [
+    "挠痒痒剧场 第三季",
+    "快乐解压实验室 第 12 期",
+    "七天不笑挑战",
+    "三分钟视频节奏教程",
+    "六款解压玩具实测",
+    "城市笑声地图",
+    "沿着一条老街走三公里",
+    "慢慢笑的树",
+    "剪辑间的小雨",
+    "走路带风的阿澈",
+    "布丁妈妈 亲子日常",
+    "北窗讲故事 科普"
+  ];
+
+  function renderHint(kw) {
+    var q = kw.trim().toLowerCase();
+    var list = searchPool.filter(function (item) {
+      return !q || item.toLowerCase().indexOf(q) !== -1;
+    }).slice(0, 6);
+    if (!list.length) {
+      searchHint.innerHTML = '<li class="vkt-hint-empty">未找到相关内容，试试「短剧」或「解压」</li>';
+    } else {
+      searchHint.innerHTML = list.map(function (item) {
+        return "<li>" + item + "</li>";
+      }).join("");
+    }
+    searchHint.classList.add("is-open");
+  }
+
+  searchInput.addEventListener("input", function () {
+    renderHint(searchInput.value);
+  });
+  searchInput.addEventListener("focus", function () {
+    renderHint(searchInput.value);
+  });
+  searchBtn.addEventListener("click", function () {
+    var kw = searchInput.value.trim();
+    if (!kw) {
+      showToast("请输入关键词后再搜索");
+      return;
+    }
+    renderHint(kw);
+    showToast("已为你检索「" + kw + "」相关内容");
+  });
+  searchInput.addEventListener("keydown", function (e) {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      searchBtn.click();
+    }
+  });
+  searchHint.addEventListener("click", function (e) {
+    if (e.target.tagName === "LI") {
+      var text = e.target.textContent;
+      searchInput.value = text;
+      showToast("已定位到「" + text + "」");
+      searchHint.classList.remove("is-open");
+    }
+  });
+  document.addEventListener("click", function (e) {
+    if (!searchWrap.contains(e.target)) {
+      searchHint.classList.remove("is-open");
+    }
+  });
+
+  /* ---------- 点赞 / 收藏 ---------- */
+  function formatCount(n) {
+    if (n >= 10000) {
+      return (n / 10000).toFixed(1).replace(/\.0$/, "") + " 万";
+    }
+    return String(n);
+  }
+  var likeBtns = document.querySelectorAll("[data-vkt-like]");
+  Array.prototype.forEach.call(likeBtns, function (btn) {
+    var countEl = btn.querySelector("[data-vkt-like-count]");
+    var base = 32000;
+    var liked = false;
+    btn.addEventListener("click", function () {
+      liked = !liked;
+      btn.classList.toggle("is-liked", liked);
+      btn.setAttribute("aria-pressed", liked ? "true" : "false");
+      var cur = base + (liked ? 1 : 0);
+      if (countEl) countEl.textContent = formatCount(cur);
+      showToast(liked ? "已点赞，感谢支持" : "已取消点赞");
+    });
+  });
+
+  var saveBtns = document.querySelectorAll("[data-vkt-save]");
+  Array.prototype.forEach.call(saveBtns, function (btn) {
+    btn.addEventListener("click", function () {
+      var on = btn.classList.toggle("is-saved");
+      btn.setAttribute("aria-pressed", on ? "true" : "false");
+      btn.innerHTML = btn.innerHTML.replace(on ? "收藏" : "已收藏", on ? "已收藏" : "收藏");
+      showToast(on ? "已加入收藏，稍后可在个人中心查看" : "已取消收藏");
+    });
+  });
+
+  /* ---------- 复制链接 ---------- */
+  var copyBtns = document.querySelectorAll("[data-vkt-copy]");
+  Array.prototype.forEach.call(copyBtns, function (btn) {
+    btn.addEventListener("click", function () {
+      var text = "vk挠痒痒官网入口 · 焦点内容：挠痒痒剧场第三季第8集";
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(function () {
+          showToast("内容链接已复制");
+        }).catch(function () {
+          showToast("复制失败，请手动选择文本");
+        });
+      } else {
+        showToast("当前环境不支持自动复制");
+      }
+    });
+  });
+
+  /* ---------- 反馈按钮 ---------- */
+  var reportBtns = document.querySelectorAll("[data-vkt-report]");
+  Array.prototype.forEach.call(reportBtns, function (btn) {
+    btn.addEventListener("click", function () {
+      openModal(feedbackModal);
+    });
+  });
+
+  /* ---------- 弹窗系统 ---------- */
+  var submitModal = document.getElementById("vktSubmitModal");
+  var feedbackModal = document.getElementById("vktFeedbackModal");
+  var authorModal = document.getElementById("vktAuthorModal");
+  var allModals = [submitModal, feedbackModal, authorModal];
+
+  function openModal(m) {
+    allModals.forEach(function (x) { x.classList.remove("is-open"); });
+    m.classList.add("is-open");
+    document.body.style.overflow = "hidden";
+  }
+  function closeAllModals() {
+    allModals.forEach(function (x) { x.classList.remove("is-open"); });
+    document.body.style.overflow = "";
+  }
+
+  document.getElementById("vktOpenSubmit").addEventListener("click", function () {
+    openModal(submitModal);
+  });
+  document.getElementById("vktOpenSubmitHero").addEventListener("click", function () {
+    openModal(submitModal);
+  });
+  document.getElementById("vktOpenFeedback").addEventListener("click", function () {
+    openModal(feedbackModal);
+  });
+
+  allModals.forEach(function (m) {
+    m.addEventListener("click", function (e) {
+      if (e.target === m) closeAllModals();
+    });
+  });
+  Array.prototype.forEach.call(document.querySelectorAll("[data-vkt-close]"), function (btn) {
+    btn.addEventListener("click", closeAllModals);
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") closeAllModals();
+  });
+
+  document.getElementById("vktSubmitForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    var name = document.getElementById("vktSubmitName").value.trim();
+    if (!name) {
+      showToast("请填写创作者昵称");
+      return;
+    }
+    closeAllModals();
+    this.reset();
+    showToast("投稿已提交，编辑团队将在十个工作日内联系你");
+  });
+
+  document.getElementById("vktFeedbackForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    var desc = document.getElementById("vktFeedbackDesc").value.trim();
+    if (!desc) {
+      showToast("请填写问题描述");
+      return;
+    }
+    closeAllModals();
+    this.reset();
+    showToast("反馈已收到，我们会在三个工作日内核实处理");
+  });
+
+  /* ---------- 作者档案 ---------- */
+  var authorData = {
+    "慢慢笑的树": {
+      avatar: "树",
+      color: "linear-gradient(135deg,#ff8a72,#e2523f)",
+      field: "原创短剧 · 生活实验",
+      works: "146",
+      fans: "28.4万",
+      bio: "擅长把日常场景改写成轻喜剧结构，镜头语言松弛自然。坚持不用罐头笑声，所有反应都来自真实拍摄现场。代表作为《挠痒痒剧场》系列与《快乐解压实验室》，是品牌短剧方向的核心创作者之一。"
+    },
+    "剪辑间的小雨": {
+      avatar: "雨",
+      color: "linear-gradient(135deg,#ffb454,#e0882a)",
+      field: "教程干货 · 创作幕后",
+      works: "98",
+      fans: "19.7万",
+      bio: "从业七年的剪辑指导，课程以可复现著称。习惯在每条教学视频末尾附上工程文件结构说明，让新手能按步骤完成一次完整剪辑。长期负责品牌教程栏目的选题与审校工作。"
+    },
+    "走路带风的阿澈": {
+      avatar: "澈",
+      color: "linear-gradient(135deg,#5aa9e6,#2c62b8)",
+      field: "城市探索 · 在地文化",
+      works: "121",
+      fans: "16.3万",
+      bio: "常驻城市影像创作者，拍摄习惯是先走三公里再开机。作品以长镜头与现场声见长，擅长把普通街景拍出叙事感。社区投票多次入选月度精选，也是《城市笑声地图》专题的联合发起人。"
+    },
+    "较真的老周": {
+      avatar: "周",
+      color: "linear-gradient(135deg,#6fbf8b,#2f8a4a)",
+      field: "深度测评 · 实用技巧",
+      works: "87",
+      fans: "14.2万",
+      bio: "理工背景出身的测评作者，坚持用数据说话。每条测评都公开测试方法与样本量，也会主动标注不确定的结论。被观众称为最不怕被打脸的测评人，长期参与官网内容标准的讨论与修订。"
+    },
+    "布丁妈妈": {
+      avatar: "布",
+      color: "linear-gradient(135deg,#c98fe0,#8b52b0)",
+      field: "亲子成长 · 日常记录",
+      works: "73",
+      fans: "11.8万",
+      bio: "记录型创作者，镜头里没有台词也没有配乐堆叠。她把孩子的情绪起伏完整保留下来，让很多家长第一次意识到，日常本身就有足够强的感染力。作品多次入选官网精品内容推荐。"
+    },
+    "北窗讲故事": {
+      avatar: "北",
+      color: "linear-gradient(135deg,#7f8fa6,#3f4a5a)",
+      field: "知识科普 · 情感故事",
+      works: "64",
+      fans: "10.5万",
+      bio: "擅长把抽象概念讲成具体故事，动画与实拍结合是他的标志手法。更新节奏稳定，每期结尾都会给出一句可执行的日常建议，长期位列口碑榜前列，也是社区公认的安心型创作者。"
+    }
+  };
+
+  var authorCards = document.querySelectorAll("[data-vkt-author]");
+  Array.prototype.forEach.call(authorCards, function (card) {
+    function activate() {
+      var key = card.getAttribute("data-vkt-author");
+      var data = authorData[key];
+      if (!data) return;
+      document.getElementById("vktAuthorModalAvatar").textContent = data.avatar;
+      document.getElementById("vktAuthorModalAvatar").style.background = data.color;
+      document.getElementById("vktAuthorModalTitle").textContent = key;
+      document.getElementById("vktAuthorModalField").textContent = data.field;
+      document.getElementById("vktAuthorModalWorks").textContent = data.works;
+      document.getElementById("vktAuthorModalFans").textContent = data.fans;
+      document.getElementById("vktAuthorModalBio").textContent = data.bio;
+      openModal(authorModal);
+    }
+    card.addEventListener("click", activate);
+    card.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        activate();
+      }
+    });
+  });
+
+  var followBtn = document.getElementById("vktAuthorModalFollow");
+  var followed = false;
+  followBtn.addEventListener("click", function () {
+    followed = !followed;
+    followBtn.textContent = followed ? "已关注" : "关注创作者";
+    showToast(followed ? "已关注该创作者，新作品将优先推荐" : "已取消关注");
+  });
+
+  /* ---------- 回到顶部 ---------- */
+  var topBtn = document.getElementById("vktTopBtn");
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 480) {
+      topBtn.classList.add("is-show");
+    } else {
+      topBtn.classList.remove("is-show");
+    }
+  }, { passive: true });
+  topBtn.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  /* ---------- 数字滚动 ---------- */
+  var counters = document.querySelectorAll("[data-vkt-count]");
+  var counted = false;
+  function runCounters() {
+    if (counted) return;
+    counted = true;
+    Array.prototype.forEach.call(counters, function (el) {
+      var target = parseInt(el.getAttribute("data-vkt-count"), 10);
+      var suffix = el.textContent.replace(/[0-9,]/g, "");
+      var start = 0;
+      var step = Math.max(1, Math.floor(target / 40));
+      var timer = setInterval(function () {
+        start += step;
+        if (start >= target) {
+          start = target;
+          clearInterval(timer);
+        }
+        el.textContent = start.toLocaleString("en-US") + suffix;
+      }, 28);
+    });
+  }
+  if ("IntersectionObserver" in window) {
+    var heroStats = document.querySelector(".vkt-hero-stats");
+    if (heroStats) {
+      var obs = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            runCounters();
+            obs.disconnect();
+          }
+        });
+      }, { threshold: 0.4 });
+      obs.observe(heroStats);
+    }
+  } else {
+    runCounters();
+  }
+
+  /* ---------- 导航高亮 ---------- */
+  var navLinks = document.querySelectorAll(".vkt-nav a");
+  var sections = [];
+  Array.prototype.forEach.call(navLinks, function (link) {
+    var href = link.getAttribute("href");
+    if (href && href.charAt(0) === "#") {
+      var sec = document.querySelector(href);
+      if (sec) sections.push({ el: sec, link: link });
+    }
+  });
+  if ("IntersectionObserver" in window && sections.length) {
+    var navObs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          sections.forEach(function (s) {
+            s.link.classList.toggle("is-active", s.el === entry.target);
+          });
+        }
+      });
+    }, { rootMargin: "-40% 0px -55% 0px" });
+    sections.forEach(function (s) { navObs.observe(s.el); });
+  }
+
+})();
+</script>
+</body>
+                                                            </html>
